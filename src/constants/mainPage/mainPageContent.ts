@@ -5,7 +5,7 @@ export const mainPageContent = {
 		phrase: "Home is where you love",
 		h1: "Elevate Your Home with Our Bathroom Remodel Services",
 		paragraph1:
-			"Join countless homeowners in Victoria who trust us to transform their bathrooms.",
+			"Looking to add a walk-in shower, or perhaps you're interested in underfloor heating for those cold mornings? Our custom bathrooms remodeling in Victoria BC incorporates modern amenities like these and more. We also specialize in kitchen and bathroom remodeling in Victoria, ensuring a cohesive look throughout your home.",
 		paragraph2:
 			"Looking to add a walk-in shower, or perhaps you're interested in underfloor heating for those cold mornings? Our custom bathrooms remodeling in Victoria BC incorporates modern amenities like these and more. We also specialize in kitchen and bathroom remodeling in Victoria, ensuring a cohesive look throughout your home.",
 
@@ -42,8 +42,10 @@ export const mainPageContent = {
 		h2: "Custom Bathrooms and Beyond: What We Offer",
 		markdown:
 			"## Leading Bathroom Remodeling Services in Victoria\n\nReady to start your bathroom renovation in Victoria? From luxurious walk-in showers to elegant bathroom vanities, our team ensures excellence in every project. Our approach combines innovative design with functionality, creating spaces that reflect your lifestyle and preferences.\n\n## Tailored to Your Needs\n\nWe understand that a good idea for one might not work for another. That's why our services are customized to meet the unique needs and preferences of each client, ensuring your new bathroom is a perfect fit for your home.\n\n## A Trusted Partner in Your Remodel Journey\n\nChoosing us means partnering with a team that values your input and satisfaction above all. We're dedicated to delivering not just a remodeled bathroom but a transformation of your living space. Let's create something exceptional together.",
-		image: 'www.image.com'
-		},
+		image: 'https://res.cloudinary.com/dzojhepyl/image/upload/v1715880285/landing/CC0C6DD3-9416-4D91-9942-AF8AA3B4263F_vhgm51.jpg',
+		imageAlt: "remodeled porch"
+	},
+
 	section2H2: "Custom Bathrooms and Beyond: What We Offer",
 	section2P1:
 		"Looking to add a walk-in shower, or perhaps you're interested in underfloor heating for those cold mornings? Our custom bathrooms remodeling in Victoria BC incorporates modern amenities like these and more. We also specialize in kitchen and bathroom remodeling in Victoria, ensuring a cohesive look throughout your home.",
@@ -311,4 +313,4 @@ export const mainPageContent = {
 	],
 	markdown3:
 		"## Renova: Where Dreams Take Shape\n\nTransform your space with Renova's expertise. Whether it's a cozy kitchen upgrade or a luxurious bathroom remodel, we're here to turn your dreams into reality. Get ready to experience the beauty of bespoke design.\n\n## Unmatched Customization for Your Home\n\nAt Renova, we believe in the power of customization. Our team works closely with you to understand your vision and deliver personalized solutions that enhance both style and functionality.\n\n## Elevate Your Home with Renova\n\nChoose Renova for a remodeling experience like no other. With a focus on quality, innovation, and client satisfaction, we're committed to exceeding your expectations every step of the way.",
-};
+}
