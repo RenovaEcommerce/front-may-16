@@ -1,0 +1,11 @@
+.header {
+  @apply flex  py-[25px]  items-center justify-between;
+}
+
+.header_links {
+  @apply flex gap-[44px] mx-auto text-main-gray max-lg:hidden;
+}
+
+.header_icons {
+  @apply flex gap-[10px];
+}

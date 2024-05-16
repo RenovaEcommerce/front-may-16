@@ -1,0 +1,301 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("/public/fonts/Metropolis-Black.otf");
+@import url("/public/fonts/Metropolis-Bold.otf");
+@import url("/public/fonts/Metropolis-Light.otf");
+@import url("/public/fonts/Metropolis-Medium.otf");
+@import url("/public/fonts/Metropolis-Regular.otf");
+@import url("/public/fonts/Metropolis-SemiBold.otf");
+@import url("/public/fonts/Metropolis-Thin.otf");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /* font: inherit; */
+  vertical-align: baseline;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Metropolis", sans-serif;
+  scroll-behavior: smooth;
+}
+
+footer {
+  font-family: "Metropolis", sans-serif;
+}
+
+header {
+  font-family: "Metropolis", sans-serif;
+}
+
+input,
+button {
+  -webkit-appearance: none;
+  outline: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+p {
+  margin: 0;
+  line-height: 140%;
+}
+
+video {
+  outline: none;
+  border: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  @media (max-width: 1064px) {
+    padding-left: 0.5rem /* 8px */;
+    padding-right: 0.5rem /* 8px */;
+  }
+}
+
+.inside-mb {
+  @apply mb-[50px] max-xl:mb-[25px];
+}
+
+.component-mb {
+  @apply mb-[100px] max-xl:mb-[50px];
+}
+
+.slider-gap {
+  @apply gap-2 lg:gap-3;
+}
+
+.custom-heading {
+  @apply text-title-large font-black text-white leading-tight max-md:text-[40px]  mb-[50px] max-xl:mb-[25px];
+}
+
+.title-white {
+  @apply text-white text-title font-light;
+}
+
+.title-mobile {
+  @apply text-white text-title-mobile font-black;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+}
+
+.yellow-link {
+  @apply text-main-yellow font-bold underline;
+}
+
+.gray-paragraph {
+  @apply text-main-gray font-light;
+}
+
+.white-paragraph {
+  @apply text-white font-light;
+}
+
+.small-button {
+  @apply gray-paragraph h-max py-2 px-4 rounded-2xl cursor-pointer hover:bg-black hover:text-main-yellow;
+}
+.small-button-active {
+  @apply font-light py-2 px-4 rounded-2xl cursor-pointer bg-black text-main-yellow;
+}
+
+.catalog-button {
+  @apply text-white py-2 px-4 pr-4 rounded-2xl border-main-gray border-[1px] border-solid hover:bg-black hover:text-main-yellow hover:border-black
+	whitespace-nowrap max-h-12; /* Added line */
+}
+
+.catalog-button-active {
+  @apply py-2 px-4 pr-4 rounded-2xl  border-[1px] border-solid bg-black text-main-yellow border-black
+	whitespace-nowrap max-h-12; /* Added line */
+}
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+/* globals.css */
+
+/* Targeting HTML elements within .markdown for Markdown content */
+
+.markdown h1,
+.markdown h2 {
+ @apply text-title text-white leading-[22px] md:leading-[28px] pb-5;
+}
+
+.markdown h3 {
+ @apply text-lg font-semibold text-title text-white mb-2;
+}
+
+.markdown p {
+ @apply text-base text-main-gray mb-5;
+}
+
+.markdown a {
+ @apply text-main-yellow underline;
+}
+
+.markdown ul,
+.markdown ol {
+ @apply list-inside text-white list-disc pl-5;
+}
+
+.markdown li {
+ @apply mb-2;
+}
+
+
+/* Add more specific styles as needed for other elements like blockquotes, code, etc. */
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: white;
+  z-index: 10;
+}
+
+.swiper-container {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 50px;
+}
