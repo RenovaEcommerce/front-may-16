@@ -41,7 +41,7 @@ const ServicesAbout: React.FC<Props> = ({
 
 
 	return (
-		<section className="container component-mb">
+		<section className="container component-mb relative z-10">
 			{/* mobile tablet  version 1 */}
 			<div className="lg:hidden">
 				<div className="component-mb max-sm:[block w-full mx-auto max-w-[1440px] relative z-10 flex flex-col items-center]">

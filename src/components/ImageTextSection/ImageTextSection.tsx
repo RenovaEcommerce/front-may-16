@@ -3,6 +3,8 @@ import about_picture from "/public/contentImages/servicesPage/countertops/counte
 
 interface ImageTextSectionProps {
     phrase: string;
+	image: string;
+	imageAlt: string;
     h1: string;
     paragraph1: string;
     paragraph2: string;
@@ -11,6 +13,8 @@ interface ImageTextSectionProps {
 
 export const ImageTextSection: React.FC<ImageTextSectionProps> = ({
 	phrase,
+	image,
+	imageAlt,
 	h1,
 	paragraph1,
 	paragraph2,
@@ -30,9 +34,11 @@ export const ImageTextSection: React.FC<ImageTextSectionProps> = ({
 						</h1>
 					</div>
 					<Image
-						className="rounded-l-xl sm:max-lg:hidden relative left-3"
-						src={about_picture}
-						alt=""
+						className="float-right  rounded-l-xl sm:max-lg:hidden relative left-3"
+						src={image}
+						height={440}
+						width={440}
+						alt={imageAlt}
 					/>
 				</div>
 				<div className="flex">
@@ -61,7 +67,7 @@ export const ImageTextSection: React.FC<ImageTextSectionProps> = ({
 						</h1>
 					</div>
 				</div>
-				<div className="flex items-center gap-10">
+				<div className="flex justify-between items-center gap-10">
 					<div className="lg:max-w-[826px] mt-[44px]  md:items-end">
 						<p className="mb-8 text-main-yellow items-center">
 							{price}
@@ -70,11 +76,16 @@ export const ImageTextSection: React.FC<ImageTextSectionProps> = ({
 						<p className="text-main-gray ">{paragraph2}</p>
 						<div className="relative lg:hidden mt-[40px] sm:mx-auto sm:w-full"></div>
 					</div>
-					<Image
-						src={about_picture}
-						alt=""
-						className="w-full rounded-l-xl max-xl:hidden" // Убедитесь, что изображение растягивается на всю ширину
-					/>
+
+					<div className="relative">
+						<Image
+							src={image}
+							height={350}
+							width={650}
+							alt={imageAlt}
+							className=" rounded-l-xl max-xl:hidden" // Убедитесь, что изображение растягивается на всю ширину
+						/>
+					</div>
 				</div>
 			</div>
 		</section>

@@ -1,5 +1,7 @@
 export const mainPageContent = {
 	imageTextSection: {
+		image: "https://res.cloudinary.com/dzojhepyl/image/upload/v1715851890/landing/27C3EAB9-A7C0-4799-A804-824126015C29_vhsmjj.jpg",
+		imageAlt: "kitchen image",
 		phrase: "Home is where you love",
 		h1: "Elevate Your Home with Our Bathroom Remodel Services",
 		paragraph1:
