@@ -64,7 +64,7 @@ const Services: React.FC<{ params: { services: string } }> = async ({
 
   const servicesData = await getServicesData(params);
   const servicesPageData = servicesData[0];
-
+console.log(servicesPageData.about)
   return (
 		<main>
 			<BackgroundPictures pageType={backgroundPicturesServices} />
@@ -72,7 +72,7 @@ const Services: React.FC<{ params: { services: string } }> = async ({
 				{...servicesPageData.hero}
 				imageBottom={countertopHeroBottom}
 			/>
-			<ServicesAbout {...servicesPageData.about} />
+			{/* <ServicesAbout {...servicesPageData.about} /> */}
 			<CatalogBanner />
 			<HowWeWork howWeWork = {servicesPageData.howWeWork} />
 			<TopProducts />

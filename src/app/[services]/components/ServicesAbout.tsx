@@ -1,5 +1,4 @@
 import Image from "next/image";
-import about_picture from "/public/contentImages/servicesPage/countertops/countertop_services.jpg";
 import circle from "/public/logo/why_section.svg";
 
 type Perk = {
@@ -12,6 +11,8 @@ type Props = {
     phrase2: string;
 	image1: string
 	image1alt: string
+	priceLine1: string;
+	priceLine2: string;
     sectionH2: string;
     sectionP1: string;
     sectionP2: string;
@@ -26,6 +27,8 @@ type Props = {
 const ServicesAbout: React.FC<Props> = ({
 	phrase1,
 	phrase2,
+	priceLine1,
+	priceLine2,
 	image1,
 	image1alt,
 	sectionH2,
@@ -39,6 +42,7 @@ const ServicesAbout: React.FC<Props> = ({
 	perks,
 }) => {
 
+	console.log(phrase1)
 
 	return (
 		<section className="container component-mb relative z-10">
@@ -67,9 +71,7 @@ const ServicesAbout: React.FC<Props> = ({
 					<div className="flex">
 						<div className="lg:mt-[44px]">
 							<p className="mb-8 text-main-yellow items-center">
-								Prices start at{" "}
-								<span className="font-black text-xl">$150</span>{" "}
-								/ sq. ft. for a full bathroom remodel
+								{priceLine1}
 							</p>
 							<p className="text-main-gray ml-auto mb-10">
 								{sectionP1}
@@ -124,9 +126,7 @@ const ServicesAbout: React.FC<Props> = ({
 					<div className="flex">
 						<div className="lg:mt-[44px]">
 							<p className="mb-8 text-main-yellow items-center">
-								Prices start at{" "}
-								<span className="font-black text-xl">$150</span>{" "}
-								/ sq. ft. for a full bathroom remodel
+								{priceLine2}
 							</p>
 							<p className="text-main-gray ml-auto mb-10">
 								{section2P1}
@@ -155,11 +155,7 @@ const ServicesAbout: React.FC<Props> = ({
 					<div className="flex items-end gap-10">
 						<div className="lg:max-w-[826px] mt-[44px]  lg:items-end">
 							<p className="mb-8 text-main-yellow items-center">
-								Prices start at{" "}
-								<span className="font-black text-xl ">
-									$150
-								</span>{" "}
-								/ sq. ft. for a full bathroom remodel
+								{priceLine1}
 							</p>
 							<p className="text-main-gray  mb-10">{sectionP1}</p>
 							<p className="text-main-gray ">{sectionP2}</p>
@@ -220,11 +216,7 @@ const ServicesAbout: React.FC<Props> = ({
 						</div>
 						<div className="lg:max-w-[826px] mt-[44px] lg:items-end">
 							<p className="mb-8 text-main-yellow items-center">
-								Prices start at{" "}
-								<span className="font-black text-xl ">
-									$150
-								</span>{" "}
-								for a toilet removal
+								{priceLine2}
 							</p>
 							<p className="text-main-gray  mb-10">
 								{section2P1}

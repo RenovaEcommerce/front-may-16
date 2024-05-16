@@ -39,6 +39,7 @@ export async function generateMetadata( { params }: { params: LocationParams }, 
 
     return {
         title: product[0].title,
+		description: product[0].description,
         openGraph: {
             images: ["/some-specific-page-image.jpg", ...previousImages],
         },
@@ -62,7 +63,7 @@ export default async function Page({ params }: {params: LocationParams}): Promis
 	const data = await getLocationData(params);
 
 	const props = { ...data[0] };
-
+console.log(data)
 	return (
 		<main>
 			{/* <BackgroundPictures pageType={backgroundPicturesMain} /> */}
