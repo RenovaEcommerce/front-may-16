@@ -408,7 +408,7 @@ interface ServiceCard {
 		heading: "Flooring Installation",
 		paragraph:
 		  "Upgrade your home with our flooring installation. Includes various types of flooring, fixtures, and various colors.",
-		url: "/flooring-installation",
+		url: "/flooring",
 		image: "service_image_kitchen_cabinets",
 		price: "Price starts at $3,000",
 	  },
@@ -1123,9 +1123,16 @@ interface ServiceCard {
 	  },
 	],
 	excavation: [
+		{
+		heading: "Excavation Service",
+		paragraph: "P",
+		url: "/excavation-contractors",
+		image: "service_image_kitchen_addition",
+		price: "Price starts at $4,000",
+		},
 	  {
 		heading: "Site Preparation",
-		paragraph: "Prepare your site for construction with our professional services.",
+		paragraph: "Professional excavation services for site preparation, land clearing, grading, and earthwork.",
 		url: "/service/site-preparation",
 		image: "service_image_kitchen_addition",
 		price: "Price starts at $7,000",
@@ -1163,7 +1170,7 @@ interface ServiceCard {
 	  {
 		heading: "Basement Finishing",
 		paragraph: "Transform your basement into functional living space with our finishing services.",
-		url: "/service/basement-finishing",
+		url: "/basement-finishing",
 		image: "service_image_kitchen_addition",
 		price: "Price starts at $10,000",
 	  },
@@ -1497,6 +1504,13 @@ interface ServiceCard {
 	  },
 	],
 	masonry: [
+		{
+			"heading": "Masonry Services",
+			"paragraph": "Expert masonry services, including brick laying, stone masonry, and more.",
+			"url": "/masonry-services",
+			"image": "service_image_kitchen_addition",
+			"price": "Price starts at $5,000"
+		  },
 	  {
 		heading: "Brick Laying and Repair",
 		paragraph: "Enhance your property with expert brick laying and repair services.",
