@@ -76,6 +76,10 @@ export const ourServices = [
 		title: "Doors",
 	},
 	{
+		id: "excavation",
+		title: "Excavation"
+	},
+	{
 		id: "hvac",
 		title: "HVAC (Air Conditioning)",
 	},

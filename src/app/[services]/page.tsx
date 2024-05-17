@@ -72,7 +72,7 @@ console.log(servicesPageData.about)
 				{...servicesPageData.hero}
 				imageBottom={countertopHeroBottom}
 			/>
-			{/* <ServicesAbout {...servicesPageData.about} /> */}
+			<ServicesAbout {...servicesPageData.about} />
 			<CatalogBanner />
 			<HowWeWork howWeWork = {servicesPageData.howWeWork} />
 			<TopProducts />

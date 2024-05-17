@@ -23,7 +23,7 @@ export const Perks: React.FC<Props> = ({ perks }: Props):JSX.Element => {
 					lg:min-w-[350px] lg:max-w-[350px] min-h-[200px]  border-solid border-[1px] hover:border-black border-white small-button text-left"
 					>
 						<div className="">
-							<div className="mb-10 flex items-center">
+							<div className="mb-5 flex items-center">
 								<Image src={contact} alt="" />
 								<div className="flex relative left-[-9px]  justify-between ">
 									<p className="text-white font-light text-title ">
