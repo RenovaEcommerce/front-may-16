@@ -41,16 +41,16 @@ export const DropDown: React.FC<Props> = ({ idType }) => {
     return (
         <section
             className={`absolute inset-0 top-32   w-screen  grid grid-flow-col bg-black text-main-gray z-20 ${
-                isDropdownOpen ? "h-max" : "h-[645px]"
+                isDropdownOpen ? "h-max" : "h-max"
             }`}
         >
             <div
                 className={` container gap-x-10  grid grid-flow-col bg-black text-main-gray  z-20 ${
-                    isDropdownOpen ? "h-auto" : "h-[500px] "
+                    isDropdownOpen ? "h-auto" : "h-auto "
                 }`}
             >
-                <ul className="text-left pt-[30px] gap-10 ">
-                    <p className="pb-[15px] text-white">Categories</p>
+                <ul className="text-left py-10 gap-10 ">
+                    {/* <p className="pb-[15px] text-white">Categories</p> */}
                     {idType &&
                         dropdowns[idType].map((category, index) => (
                             <li
@@ -76,9 +76,9 @@ export const DropDown: React.FC<Props> = ({ idType }) => {
                         ))}
                 </ul>
 
-                <ul className="relative pt-[30px] text-left   ">
-                    <p className="pb-[15px] text-white">Material</p>
-
+                <ul className="relative py-10 text-left   ">
+{/*                     <p className="pb-[15px] text-white">Material</p>
+ */}
                     {selectedCategory?.types?.map((type) => (
                         <li className=" text-title text-primary" key={type.link}>
                             <Link
@@ -108,12 +108,12 @@ export const DropDown: React.FC<Props> = ({ idType }) => {
                 </ul>
 
                 <div>
-                    <div className="flex  items-center gap-4 hover:cursor-pointer">
+                    {/* <div className="flex  items-center gap-4 hover:cursor-pointer">
                         <p className=" pt-[30px] pb-[23px]  underline text-main-yellow">Browse Catalog</p>
                         <Image className="relative top-1" src={arrow_yellow_right} alt="arrow" />
-                    </div>
+                    </div> */}
 
-                    <div className="flex flex-wrap gap-5 items-start h-max  ">
+                    <div className="flex py-10 flex-wrap gap-5 items-start h-max  ">
                         {isId &&
                             catalogOptionsHero[isId] &&
                             catalogOptionsHero[isId].map((link, index) => (
