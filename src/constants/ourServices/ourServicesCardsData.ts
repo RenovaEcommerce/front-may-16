@@ -412,6 +412,34 @@ interface ServiceCard {
 		image: "service_image_kitchen_cabinets",
 		price: "Price starts at $3,000",
 	  },
+	  {
+		heading: "Hardwood Flooring",
+		paragraph: "Upgrade your home with our high-quality hardwood flooring. Choose from a variety of styles and finishes to match your décor and enhance the value of your property.",
+		url: "/service/hardwood-flooring",
+		image: "service_image_kitchen_cabinets",
+		price: "Price starts at $5,000"
+	  },
+	  {
+		heading: "Laminate Flooring",
+		paragraph: "Our laminate flooring offers durability and a stylish appearance at an affordable price. It’s easy to install and maintain, making it ideal for high-traffic areas.",
+		url: "/service/laminate-flooring",
+		image: "service_image_kitchen_cabinets",
+		price: "Price starts at $2,500"
+	  },
+	  {
+		heading: "Carpet",
+		paragraph: "Choose our carpet installation for comfort and style. We offer a wide range of colors and textures to fit any room’s design.",
+		url: "/service/carpet",
+		image: "service_image_kitchen_cabinets",
+		price: "Price starts at $1,500"
+	  },
+	  {
+		heading: "LVT Flooring",
+		paragraph: "Select our LVT flooring for a cost-effective solution that doesn’t compromise on style. Ideal for areas that require durability and moisture resistance.",
+		url: "/service/lvt-flooring",
+		image: "service_image_kitchen_cabinets",
+		price: "Price starts at $3,000"
+	  }
 	],
 	decking: [
 	  {
@@ -1200,7 +1228,7 @@ interface ServiceCard {
 	  {
 		heading: "Attic Finishing",
 		paragraph: "Transform your attic into usable living space with our finishing services.",
-		url: "/service/attic-finishing",
+		url: "/attic-finishing",
 		image: "service_image_kitchen_addition",
 		price: "Price starts at $10,000",
 	  },
@@ -1527,4 +1555,3 @@ interface ServiceCard {
 	  },
 	],
   };
-  
