@@ -1,20 +1,17 @@
 import Link from "next/link";
 import React from "react";
 
-
 type PaginationProps = {
-    totalPages: number;
-    currentPage: number;
-    basePath: string;
-}
+	totalPages: number;
+	currentPage: number;
+	basePath: string;
+};
 
 const Pagination: React.FC<PaginationProps> = ({
 	totalPages,
 	currentPage,
 	basePath,
 }) => {
-
-
 	return (
 		<div className="mx-auto w-max component-mb">
 			{Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (

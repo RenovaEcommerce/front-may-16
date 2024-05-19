@@ -24,7 +24,6 @@ const page: React.FC<Props> = async ({ params }: Props) => {
 		blogData = await getBlogData(search);
 	}
 
-
 	return (
 		<main>
 			<BackgroundPictures pageType={backgroundPicturesServices} />

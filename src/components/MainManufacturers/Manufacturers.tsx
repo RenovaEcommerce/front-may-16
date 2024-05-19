@@ -42,7 +42,9 @@ export const Manufacturers: React.FC = () => {
 					</ul>
 				</div>
 				<div className="w-full overflow-x-auto md:w-[80%] grid grid-cols-3 gap-2 lg:grid-cols-4 xl:grid-cols-5 mx-auto gap-x-4 items-center ">
-					{manufacturersLogos[clickedService as keyof typeof manufacturersLogos].map((logo, index) => (
+					{manufacturersLogos[
+						clickedService as keyof typeof manufacturersLogos
+					].map((logo, index) => (
 						<Image
 							key={index}
 							src={logo.image}

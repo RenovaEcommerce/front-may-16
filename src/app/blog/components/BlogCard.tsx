@@ -7,14 +7,10 @@ import Markdown from "react-markdown";
 interface BlogCardProps {
 	markdown: string;
 	url: string;
-	createdAt: string
+	createdAt: string;
 }
 
-export const BlogCard: FC<BlogCardProps> = ({
-	markdown,
-	url,
-	createdAt,
-}) => {
+export const BlogCard: FC<BlogCardProps> = ({ markdown, url, createdAt }) => {
 	const dateObj = new Date(createdAt);
 	const options = { year: "numeric", month: "long", day: "numeric" };
 

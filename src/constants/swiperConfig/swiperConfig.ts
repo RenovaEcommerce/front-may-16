@@ -1,4 +1,10 @@
-import { Navigation, Scrollbar, A11y, Pagination, Autoplay } from "swiper/modules";
+import {
+	Navigation,
+	Scrollbar,
+	A11y,
+	Pagination,
+	Autoplay,
+} from "swiper/modules";
 import { HeroSlide } from "@/components/Slider/SwiperSlides/HeroSlide";
 import kitchen_swiper from "/public/contentImages/mainSwiper/kitchen_swiper.jpeg";
 import MainSwiper from "@/components/Slider/SwiperSlides/MainSwiper";
@@ -21,7 +27,7 @@ export const swiperConfig = {
 			autoplay: {
 				delay: 3000, // Delay between transitions (in milliseconds)
 				disableOnInteraction: false,
-			}
+			},
 		},
 		width: 1440,
 		content: [

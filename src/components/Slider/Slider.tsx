@@ -29,10 +29,10 @@ export const Slider: FC<SwiperProps> = ({ id }) => {
 	const SelectedSlide = swiperSlide;
 
 	return (
-		<section className='container'>
+		<section className="container">
 			<Swiper pagination={true} {...settings}>
 				{content.map((slide: SwiperContent) => (
-					<SwiperSlide className='pb-[45px]' key={slide.id}>
+					<SwiperSlide className="pb-[45px]" key={slide.id}>
 						<SelectedSlide {...slide} />
 					</SwiperSlide>
 				))}

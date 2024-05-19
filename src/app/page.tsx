@@ -28,8 +28,7 @@ export const metadata: Metadata = {
 	title: "Renova Remodeling Experts | Kitchens, Baths, More!",
 	description:
 		" Upgrade your home with expert remodeling from Renova. Kitchens, bathrooms, basements & more! Free consultations, financing available",
-
-  }
+};
 
 export default function Home(): JSX.Element {
 	return (

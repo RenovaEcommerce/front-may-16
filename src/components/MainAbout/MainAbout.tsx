@@ -4,13 +4,18 @@ import { MyMarkdown } from "../MyMarkdown/MyMarkdown";
 import Link from "next/link";
 
 type Props = {
-	h2: string,
-	markdown: string
-	image: string
-	imageAlt: string
-}
+	h2: string;
+	markdown: string;
+	image: string;
+	imageAlt: string;
+};
 
-export const MainAbout: React.FC<Props> = ({ h2, markdown, image, imageAlt }) => {
+export const MainAbout: React.FC<Props> = ({
+	h2,
+	markdown,
+	image,
+	imageAlt,
+}) => {
 	return (
 		<section className="container  mb-[100px] max-md:mb-[50px] z-10 relative text-main-gray">
 			<div className="flex justify-between max-sm:flex-col sm:flex-row md:gap-[11.08%] w-full max-w-screen-xl mx-auto mx-xl:items-center">
@@ -27,7 +32,6 @@ export const MainAbout: React.FC<Props> = ({ h2, markdown, image, imageAlt }) =>
 						alt={imageAlt}
 						width={350}
 						height={270}
-
 					/>
 				</div>
 				<div className="flex flex-col w-full md:w-[50%] max-md:mt-[40px] text-main-gray">

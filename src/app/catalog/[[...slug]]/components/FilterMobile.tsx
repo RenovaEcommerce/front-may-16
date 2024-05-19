@@ -10,15 +10,14 @@ import { usePathname } from "next/navigation";
 import { useFilters } from "@/lib/urlSearch/urlSearch";
 
 type FilterMobileProps = {
-    isFilterMobile: boolean;
-    setFilterMobile: React.Dispatch<React.SetStateAction<boolean>>;
-}
+	isFilterMobile: boolean;
+	setFilterMobile: React.Dispatch<React.SetStateAction<boolean>>;
+};
 
 export const FilterMobile: React.FC<FilterMobileProps> = ({
 	isFilterMobile,
 	setFilterMobile,
 }: any) => {
-
 	const { filters, setFilters, setIsChecked, isChecked } = useFilters();
 
 	const pathname = usePathname();

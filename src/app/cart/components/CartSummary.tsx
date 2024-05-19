@@ -1,6 +1,6 @@
 import { Button } from "@/components/Button/Button";
 
-export const CartSummary:React.FC = ():any => {
+export const CartSummary: React.FC = (): any => {
 	return (
 		<section className="w-full h-full lg:w-[360px] pb-[120px] lg:pb-[200px]">
 			<p className="custom-heading max-lg:text-[50px] pb-[40px] lg:pb-20">

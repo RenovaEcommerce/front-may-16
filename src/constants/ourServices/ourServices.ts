@@ -77,7 +77,7 @@ export const ourServices = [
 	},
 	{
 		id: "excavation",
-		title: "Excavation"
+		title: "Excavation",
 	},
 	{
 		id: "hvac",

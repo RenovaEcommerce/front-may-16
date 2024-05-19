@@ -81,7 +81,6 @@ export const Header: React.FC = (): JSX.Element => {
 		};
 	}, [isNavMobile]);
 
-
 	return (
 		<header className="container sm:mb-10">
 			<Geo />

@@ -2,10 +2,10 @@ import Image from "next/image";
 import React from "react";
 
 type Props = {
-	image: string,
-	height: string,
-	width: string
-}
+	image: string;
+	height: string;
+	width: string;
+};
 
 const MainSwiper: React.FC<Props> = ({ image, height, width }: any) => {
 	return (

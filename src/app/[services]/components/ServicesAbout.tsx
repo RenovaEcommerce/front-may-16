@@ -2,26 +2,26 @@ import Image from "next/image";
 import circle from "/public/logo/why_section.svg";
 
 type Perk = {
-    heading: string;
-    paragraph: string;
+	heading: string;
+	paragraph: string;
 };
 
 type Props = {
-    phrase1: string;
-    phrase2: string;
-	image1: string
-	image1alt: string
+	phrase1: string;
+	phrase2: string;
+	image1: string;
+	image1alt: string;
 	priceLine1: string;
 	priceLine2: string;
-    sectionH2: string;
-    sectionP1: string;
-    sectionP2: string;
+	sectionH2: string;
+	sectionP1: string;
+	sectionP2: string;
 	image2: string;
-	image2alt: string
-    section2H2: string;
-    section2P1: string;
-    section2P2: string;
-    perks: Perk[];
+	image2alt: string;
+	section2H2: string;
+	section2P1: string;
+	section2P2: string;
+	perks: Perk[];
 };
 
 const ServicesAbout: React.FC<Props> = ({
@@ -41,9 +41,6 @@ const ServicesAbout: React.FC<Props> = ({
 	section2P2,
 	perks,
 }) => {
-
-	console.log(phrase1)
-
 	return (
 		<section className="container component-mb relative z-10">
 			{/* mobile tablet  version 1 */}
@@ -144,10 +141,10 @@ const ServicesAbout: React.FC<Props> = ({
 				<div className="text-right  lg:[block w-full mx-auto max-w-[1440px] relative z-10 mb-20 flex flex-col item-center lg:justify-end]  ">
 					<div className="flex ">
 						<div className="max-w-full ">
-							<p className="text-white font-light text-title">
+							<p className="text-white font-light text-title ">
 								{phrase1}
 							</p>
-							<h2 className="custom-heading max-lg:text-[40px] leading-tight first-letter:text-main-yellow   mb-10">
+							<h2 className="custom-heading float-left max-lg:text-[40px] leading-tight first-letter:text-main-yellow   mb-10">
 								{sectionH2}
 							</h2>
 						</div>
@@ -194,7 +191,7 @@ const ServicesAbout: React.FC<Props> = ({
 					})}
 				</ul>
 
-				<div className=" lg:[block w-full mx-auto max-w-[1440px] relative z-10 flex flex-col item-center lg:justify-end]  ">
+				<div className=" lg:[block w-full mx-auto max-w-[1440px] relative z-10 flex flex-col item-center lg:justify-end  ">
 					<div className="flex justify-end">
 						<div className="text-right">
 							<p className="text-white font-light text-title">

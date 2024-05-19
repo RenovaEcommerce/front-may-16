@@ -4,15 +4,15 @@ import Image from "next/image";
 import contact from "/public/logo/contact.svg";
 
 type PerksObj = {
-	heading: string
-	paragraph: string
-}
+	heading: string;
+	paragraph: string;
+};
 
 type Props = {
-	perks: PerksObj[]
-}
+	perks: PerksObj[];
+};
 
-export const Perks: React.FC<Props> = ({ perks }: Props):JSX.Element => {
+export const Perks: React.FC<Props> = ({ perks }: Props): JSX.Element => {
 	return (
 		<section className="container">
 			<ul className="flex overflow-x-auto slider-gap component-mb no-scrollbar ">

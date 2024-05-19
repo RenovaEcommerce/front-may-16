@@ -8,7 +8,7 @@ import Link from "next/link";
 import { ourServicesCardsData } from "@/constants/ourServices/ourServicesCardsData";
 import { ServicesCard } from "../ServicesCard/ServicesCard";
 
-export const OurServices: React.FC = (): JSX.Element  => {
+export const OurServices: React.FC = (): JSX.Element => {
 	const [clickedService, setClickedService] = useState("tile");
 
 	const handleServiceClick = (newServiceId: string): void => {
@@ -45,9 +45,12 @@ export const OurServices: React.FC = (): JSX.Element  => {
 				{ourServicesCardsData[clickedService].map(
 					(card: object, index: number) => {
 						return (
-							<li className={`${
-								index === 0 && "text-main-yellow"
-							}`} key={index}>
+							<li
+								className={`${
+									index === 0 && "text-main-yellow"
+								}`}
+								key={index}
+							>
 								<ServicesCard
 									heading={""}
 									paragraph={""}
@@ -68,7 +71,7 @@ export const OurServices: React.FC = (): JSX.Element  => {
 				</h5>
 				{selectedCategory &&
 					selectedCategory.map((link, index) => (
-						<li  key={link.url}>
+						<li key={link.url}>
 							<Link
 								className={`catalog-button  whitespace-nowrap`}
 								href={link.url}

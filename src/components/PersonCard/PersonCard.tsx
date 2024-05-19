@@ -1,15 +1,17 @@
-import Image from 'next/image'
+import Image from "next/image";
 
 type StaticImageData = {
 	src: string;
 	height: number;
 	width: number;
 	blurDataURL?: string;
-  };
+};
 
 type Props = {
-	name: string, image: StaticImageData, title: string
-}
+	name: string;
+	image: StaticImageData;
+	title: string;
+};
 
 export const PersonCard: React.FC<Props> = ({ name, image, title }) => {
 	return (

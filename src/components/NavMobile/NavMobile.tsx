@@ -10,9 +10,12 @@ import { Button } from "../Button/Button";
 type Props = {
 	isNavMobile: boolean;
 	setIsNavMobile(isMobile: boolean): void;
-  };
+};
 
-const NavMobile: React.FC<Props> = ({ isNavMobile, setIsNavMobile }): JSX.Element  => {
+const NavMobile: React.FC<Props> = ({
+	isNavMobile,
+	setIsNavMobile,
+}): JSX.Element => {
 	const [idType, setIdtype] = useState("");
 	const [isOpen, setIsOpen] = useState(false);
 	const [isDropdownHovered, setIsDropdownHovered] = useState(false);
@@ -21,7 +24,6 @@ const NavMobile: React.FC<Props> = ({ isNavMobile, setIsNavMobile }): JSX.Elemen
 		setIdtype(id);
 		setIsOpen(true);
 		//console.log(idType);
-
 	};
 
 	return (

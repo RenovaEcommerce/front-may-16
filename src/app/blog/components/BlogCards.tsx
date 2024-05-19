@@ -4,12 +4,12 @@ import { CatalogBanner } from "@/app/catalog/[[...slug]]/components/CatalogBanne
 interface BlogCardProps {
 	markdown: string;
 	url: string;
-	createdAt: string
+	createdAt: string;
 }
 
 type BlogCard = {
-	cards: BlogCardProps[]
-}
+	cards: BlogCardProps[];
+};
 
 export const BlogCards: React.FC<BlogCard> = ({ cards }) => {
 	return (

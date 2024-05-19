@@ -3,15 +3,15 @@ import circle from "/public/logo/why_section.svg";
 import contact from "/public/logo/contact.svg";
 
 type PropsObj = {
-	id: number
-	title: string,
-	description: string
-}
+	id: number;
+	title: string;
+	description: string;
+};
 
 type Props = {
-	whyArray: PropsObj[]
-	whyGrid: string[]
-}
+	whyArray: PropsObj[];
+	whyGrid: string[];
+};
 
 export const MainWhySection: React.FC<Props> = ({ whyArray, whyGrid }) => {
 	return (

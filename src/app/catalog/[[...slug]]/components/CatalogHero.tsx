@@ -9,7 +9,6 @@ import Link from "next/link";
 import { catalogOptionsHero } from "@/constants/catalog/catalogOptions";
 import { usePathname } from "next/navigation";
 
-
 interface Product {
 	id: string;
 	title: string;
@@ -17,9 +16,7 @@ interface Product {
 	text: string;
 }
 
-
 export const CatalogHero: React.FC = () => {
-
 	const pathname = usePathname();
 
 	const filterSelection = pathname.split("/");

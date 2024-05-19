@@ -2,13 +2,13 @@ import Image from "next/image";
 import about_picture from "/public/contentImages/servicesPage/countertops/countertop_services.jpg";
 
 interface ImageTextSectionProps {
-    phrase: string;
+	phrase: string;
 	image: string;
 	imageAlt: string;
-    h1: string;
-    paragraph1: string;
-    paragraph2: string;
-    price: string;
+	h1: string;
+	paragraph1: string;
+	paragraph2: string;
+	price: string;
 }
 
 export const ImageTextSection: React.FC<ImageTextSectionProps> = ({
@@ -18,7 +18,7 @@ export const ImageTextSection: React.FC<ImageTextSectionProps> = ({
 	h1,
 	paragraph1,
 	paragraph2,
-	price,
+	price
 }) => {
 	return (
 		<section className="container">

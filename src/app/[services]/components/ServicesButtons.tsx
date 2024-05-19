@@ -2,17 +2,13 @@ import Link from "next/link";
 
 import { servicesOptionsBottom } from "@/constants/services/servicesButtons";
 
-
-
 const ServicesButtons: React.FC<any> = ({ category }) => {
-
 	const buttonsList = servicesOptionsBottom?.[category];
 
-if (buttonsList) {
-
-} else {
-	console.error("Invalid category provided");
-}
+	if (buttonsList) {
+	} else {
+		console.error("Invalid category provided");
+	}
 
 	return (
 		<section className="container ">

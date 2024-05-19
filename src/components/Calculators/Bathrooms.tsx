@@ -9,7 +9,7 @@ const BathroomRemodelCalculator: React.FC = () => {
 	const [remodelType, setRemodelType] = useState("full");
 	const [costPerSqFt, setCostPerSqFt] = useState(100); // Example cost per square foot
 
-	const calculateCost = ():number => {
+	const calculateCost = (): number => {
 		const baseCost = size * costPerSqFt;
 		let additionalCost = 0;
 

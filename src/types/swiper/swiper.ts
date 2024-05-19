@@ -7,7 +7,7 @@ export type SwiperContent = {
 	descriptionTitle?: string;
 	descriptionText?: string;
 	buttonHref: string;
-	heroImage:string
+	heroImage: string;
 };
 
 interface SwiperSettings {

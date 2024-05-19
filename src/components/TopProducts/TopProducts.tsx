@@ -11,48 +11,45 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 interface Item {
-
-    id: number;
-    name: string;
-	cover:string,
-	url:string,
-	style:string,
-	color:string,
-	price:string,
-	variants:string,
-	thickness:string,
-	measurement:string
-	image:string,
-	title:string,
-	description:string
-
+	id: number;
+	name: string;
+	cover: string;
+	url: string;
+	style: string;
+	color: string;
+	price: string;
+	variants: string;
+	thickness: string;
+	measurement: string;
+	image: string;
+	title: string;
+	description: string;
 }
 
 interface Props {
-    data: Item[]; // Define the type of the data prop
+	data: Item[]; // Define the type of the data prop
 }
 
 export const TopProducts: React.FC = (): JSX.Element => {
-    const [clickedService, setClickedService] = useState("tile");
-    const [data, setData] = useState<Item[] | null>(null); // Initialize data as null
+	const [clickedService, setClickedService] = useState("tile");
+	const [data, setData] = useState<Item[] | null>(null); // Initialize data as null
 
-    useEffect(() => {
-        const fetchData = async (): Promise<any> => {
-            // Specify Promise return type
-            const response = await fetch(
-                `http://localhost:4100/products/topproducts/${clickedService}`,
-            );
-            const data = await response.json();
-            setData(data);
-			
-            return data; // Explicitly return data (optional)
-        };
+	useEffect(() => {
+		const fetchData = async (): Promise<any> => {
+			// Specify Promise return type
+			const response = await fetch(
+				`http://localhost:4100/products/topproducts/${clickedService}`,
+			);
+			const data = await response.json();
+			setData(data);
 
-        fetchData();
+			return data; // Explicitly return data (optional)
+		};
 
-    }, [clickedService]);
+		fetchData();
+	}, [clickedService]);
 
-    return (
+	return (
 		<section className="w-full max-w-[1440px] px-[10px] mx-auto z-10 relative text-main-gray mb-[100px] max-xl:mb-[50px]">
 			<div className="flex flex-col items-center md:flex-row">
 				<div className="md:text-center md:pr-8 w-full md:w-[35%] xl:w-[28%] ">
@@ -90,7 +87,6 @@ export const TopProducts: React.FC = (): JSX.Element => {
 					{data &&
 						data.length > 0 && // Check for data and its length before mapping
 						data.map((item: Item, index: number) => {
-
 							return (
 								<li key={index}>
 									<Link href="/product">

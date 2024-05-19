@@ -3,21 +3,21 @@ import cardImage from "/public/contentImages/ourServices/cabinets.jpeg";
 import Link from "next/link";
 
 type Props = {
-  heading: string;
-  paragraph: string;
-  price: number;
-  url: string;
-  image: string;
+	heading: string;
+	paragraph: string;
+	price: number;
+	url: string;
+	image: string;
 };
 
 export const ServicesCard: React.FC<Props> = ({
-  heading,
-  paragraph,
-  price,
-  url,
-  image,
+	heading,
+	paragraph,
+	price,
+	url,
+	image,
 }) => {
-  return (
+	return (
 		<Link href={url}>
 			<div
 				className="relative justify-between min-w-[300px] min-h-[490px] max-w-[300px] max-h-[490px]
@@ -43,5 +43,5 @@ export const ServicesCard: React.FC<Props> = ({
 				<p className="px-2">{price}</p>
 			</div>
 		</Link>
-  );
+	);
 };

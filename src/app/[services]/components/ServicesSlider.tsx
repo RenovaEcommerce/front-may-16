@@ -16,7 +16,6 @@ type ServiceSlider = {
 };
 
 const ServicesSlider: React.FC<ServiceSlider> = ({ servicesSlider }) => {
-
 	return (
 		<section className="relative container pl-5 flex my-20 slider-gap w-full overflow-x-auto no-scrollbar ">
 			{servicesSlider &&

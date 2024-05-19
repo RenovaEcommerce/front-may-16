@@ -1,4 +1,4 @@
-export const getServiceSubData= async (params: any): Promise<any> => {
+export const getServiceSubData = async (params: any): Promise<any> => {
 	const res = await fetch(
 		`http://localhost:4100/servicesub/${params.servicename}/`,
 	);

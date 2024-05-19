@@ -1,6 +1,6 @@
 import { Button } from "@/components/Button/Button";
 
-export const CatalogBanner:React.FC = ():any => (
+export const CatalogBanner: React.FC = (): any => (
 	<div className="container mx-auto flex flex-col md:flex-row md:justify-around md:items-center component-mb">
 		<p className="text-title-large max-lg:text-[24px] font-black text-main-yellow">
 			Need Help?

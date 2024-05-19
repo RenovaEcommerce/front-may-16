@@ -1,6 +1,6 @@
 import header_liked from "/public/logo/header_liked.svg";
 import header_cart from "/public/logo/header_cart.svg";
-import header_user from "/public/logo/header_user.svg"
+import header_user from "/public/logo/header_user.svg";
 import type { HeaderData, HeaderIcons } from "@/types/header/headerData";
 
 export const ICON_SIZE = 26;
@@ -56,34 +56,32 @@ export const headerIcons: HeaderIcons[] = [
 		icon: header_cart,
 		alt: "header_cart_icon",
 		href: "/cart",
-	}/* ,
+	} /* ,
 	{
 		id: 3,
 		icon: header_user,
 		alt: "header_user_icon",
 		href: "/",
-	} */
+	} */,
 ];
 
 interface PopularService {
-    name: string;
-    link: string;
+	name: string;
+	link: string;
 }
 
 interface Type {
-    name: string;
-    link: string;
-    popularServices?: PopularService[];
+	name: string;
+	link: string;
+	popularServices?: PopularService[];
 }
 
 export interface Service {
-    link: string;
-    text: string;
-    id?: string;
-    types: Type[];
+	link: string;
+	text: string;
+	id?: string;
+	types: Type[];
 }
-
-
 
 export const dropdowns: { [key: string]: Service[] } = {
 	services: [

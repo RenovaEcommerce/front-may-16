@@ -8,7 +8,7 @@ export const useFilters = (): any => {
 	const router = useRouter();
 	const pathname = usePathname();
 
-	const getQueryPath = (obj: Record<string, unknown>):any => {
+	const getQueryPath = (obj: Record<string, unknown>): any => {
 		const cleaned = (structuredClone(obj) ?? {}) as Record<
 			string,
 			string | boolean | number

@@ -5,21 +5,21 @@ import contact from "/public/logo/contact.svg";
 import Link from "next/link";
 
 interface DescriptionObject {
-	p1: string
-	p2: string
-	p3: string
+	p1: string;
+	p2: string;
+	p3: string;
 }
 
 interface HowWeWorkObj {
-    id: number;
-    title: string;
-    description: DescriptionObject;
-    imagePath: string; // Added imagePath field
+	id: number;
+	title: string;
+	description: DescriptionObject;
+	imagePath: string; // Added imagePath field
 }
 
 type Props = {
-    howWeWork: HowWeWorkObj[];
-}
+	howWeWork: HowWeWorkObj[];
+};
 
 const HowWeWork: React.FC<Props> = ({ howWeWork }) => (
 	<section className="container component-mb ">
@@ -28,9 +28,7 @@ const HowWeWork: React.FC<Props> = ({ howWeWork }) => (
 		</h2>
 
 		<ul className="flex overflow-x-auto slider-gap  no-scrollbar ">
-
 			{howWeWork.map((step: HowWeWorkObj) => (
-
 				<li
 					key={step.id}
 					className="min-w-[350px] max-w-[350px]

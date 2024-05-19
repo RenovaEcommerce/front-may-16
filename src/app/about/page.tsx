@@ -9,11 +9,8 @@ import { FormComponent } from "@/components/FormMain/FormComponent";
 import { MainSlider } from "@/components/MainSlider/MainSlider";
 
 const About: React.FC = () => (
-	
 	<main>
-		<ServicesHero
-		{...aboutPageContent.hero}
-		/>
+		<ServicesHero {...aboutPageContent.hero} />
 		<ServicesAbout {...aboutPageContent.about} />
 		<MainWhySection {...aboutPageContent.whySection} />
 		<FullWidthHorizontalSlider />

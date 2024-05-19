@@ -20,61 +20,58 @@ import { backgroundPicturesServices } from "@/constants/background/backgroundPic
 import { LocationsList } from "@/components/LocationsList/LocationsList";
 
 type Props = {
-  params: { services: string };
-  searchParams: { [key: string]: string | string[] | undefined };
+	params: { services: string };
+	searchParams: { [key: string]: string | string[] | undefined };
 };
 
 export async function generateMetadata(
-  { params }: Props,
-  parent: ResolvingMetadata,
+	{ params }: Props,
+	parent: ResolvingMetadata,
 ): Promise<Metadata> {
-  const id = params.services;
+	const id = params.services;
 
-  const service = await fetch(`http://localhost:4100/services/${id}`).then(
-    (res) => res.json(),
-  );
+	const service = await fetch(`http://localhost:4100/services/${id}`).then(
+		(res) => res.json(),
+	);
 
-  const previousImages = (await parent).openGraph?.images || [];
+	const previousImages = (await parent).openGraph?.images || [];
 
-  return {
-    title: service[0].title,
-    description: service[0].description,
-    openGraph: {
-      images: ["/some-specific-page-image.jpg", ...previousImages],
-    },
-  };
+	return {
+		title: service[0].title,
+		description: service[0].description,
+		openGraph: {
+			images: ["/some-specific-page-image.jpg", ...previousImages],
+		},
+	};
 }
-
 
 export async function generateStaticParams(): Promise<{ services: string }[]> {
-  const url = await fetch(`http://localhost:4100/services/`).then((res) =>
-    res.json(),
-  )
+	const url = await fetch(`http://localhost:4100/services/`).then((res) =>
+		res.json(),
+	);
 
-  return url.map((post: { service: string }) => ({
-    services: post.service,
-  }));
-
+	return url.map((post: { service: string }) => ({
+		services: post.service,
+	}));
 }
 
-
 const Services: React.FC<{ params: { services: string } }> = async ({
-  params,
+	params,
 }) => {
-
-  const servicesData = await getServicesData(params);
-  const servicesPageData = servicesData[0];
-console.log(servicesPageData.about)
-  return (
+	const servicesData = await getServicesData(params);
+	const servicesPageData = servicesData[0];
+	return (
 		<main>
 			<BackgroundPictures pageType={backgroundPicturesServices} />
 			<ServicesHero
 				{...servicesPageData.hero}
 				imageBottom={countertopHeroBottom}
 			/>
+			<CatalogBanner />
+
 			<ServicesAbout {...servicesPageData.about} />
 			<CatalogBanner />
-			<HowWeWork howWeWork = {servicesPageData.howWeWork} />
+			<HowWeWork howWeWork={servicesPageData.howWeWork} />
 			<TopProducts />
 			<Manufacturers />
 			<ServicesSlider {...servicesPageData} />
@@ -85,7 +82,7 @@ console.log(servicesPageData.about)
 			<ContactUs />
 			<LocationsList />
 		</main>
-  );
+	);
 };
 
 export default Services;

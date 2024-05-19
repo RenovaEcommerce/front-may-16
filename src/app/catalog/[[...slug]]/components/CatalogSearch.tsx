@@ -8,7 +8,7 @@ import { usePathname, useSearchParams } from "next/navigation";
 import { productFilter } from "@/constants/catalog/catalogFilters";
 import { useFilters } from "@/lib/urlSearch/urlSearch";
 
-const CatalogSearch = ({ products, params }: any) : any => {
+const CatalogSearch = ({ products, params }: any): any => {
 	const [hasShowAdditionalRows, sethasShowAdditionalRows] = useState(false);
 	const [isFilterMobile, setFilterMobile] = useState(false);
 

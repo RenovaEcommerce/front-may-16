@@ -7,15 +7,15 @@ import down from "/public/arrow/arrow_dropdown_down.svg";
 import { useState } from "react";
 
 type FAQItem = {
-    question: string;
-    answer: string;
+	question: string;
+	answer: string;
 };
 
 type FaqProps = {
-    faqItems: FAQItem[];
+	faqItems: FAQItem[];
 };
 
-export const FAQ: React.FC<FaqProps> = ({ faqItems }): JSX.Element  => {
+export const FAQ: React.FC<FaqProps> = ({ faqItems }): JSX.Element => {
 	const [clickedItems, setClickedItems] = useState(Array(4).fill(false));
 
 	// Function to handle item click and toggle visibility
@@ -30,7 +30,6 @@ export const FAQ: React.FC<FaqProps> = ({ faqItems }): JSX.Element  => {
 
 	return (
 		<section className="container component-mb  relative z-10">
-
 			<h2 className="w-max mx-auto  custom-heading first-letter:text-main-yellow">
 				FAQ
 			</h2>

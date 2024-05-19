@@ -11,7 +11,9 @@ export async function getData(params: any, searchParams: any): Promise<any> {
 		.filter(([key, value]) => value != null) // Ensure no undefined or null values are included.
 		.map(
 			([key, value]) =>
-				`${encodeURIComponent(key)}=${encodeURIComponent(value as any)}`,
+				`${encodeURIComponent(key)}=${encodeURIComponent(
+					value as any,
+				)}`,
 		)
 		.join("&");
 

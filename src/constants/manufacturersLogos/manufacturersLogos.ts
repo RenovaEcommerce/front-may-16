@@ -33,7 +33,6 @@ import mohawk from "/public/contentImages/manufacturersLogos/mohawk.png";
 import fiberon from "/public/contentImages/manufacturersLogos/fiberon.webp";
 import type { StaticImageData } from "next/image";
 
-
 interface ManufacturerLogo {
 	id: number;
 	height: number;
@@ -41,9 +40,9 @@ interface ManufacturerLogo {
 	image: StaticImageData;
 	url: string;
 	alt: string;
-  }
-  
-  interface ManufacturersLogos {
+}
+
+interface ManufacturersLogos {
 	tile: ManufacturerLogo[];
 	countertops: ManufacturerLogo[];
 	cabinets: ManufacturerLogo[];
@@ -51,9 +50,9 @@ interface ManufacturerLogo {
 	doors: ManufacturerLogo[];
 	flooring: ManufacturerLogo[];
 	decking: ManufacturerLogo[];
-  }
+}
 
-export const manufacturersLogos:ManufacturersLogos = {
+export const manufacturersLogos: ManufacturersLogos = {
 	tile: [
 		{
 			id: 1,

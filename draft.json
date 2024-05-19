@@ -1,405 +1,254 @@
+
+
 {
-	"location": "",
-	"category": "kitchen",
-	"service": "kitchen-remodeling",
-	"title": "Top Kitchen Remodeling Services | Affordable & High-Quality",
-	"description": "Discover the best in kitchen remodeling. Get a quote today!",
-	"hero": {
-	  "h1": "Kitchen Remodeling Services",
-	  "heroH2": "Transform Your Kitchen with Our Services",
-	  "heroP": "Our kitchen remodeling services offer high-quality workmanship and competitive pricing, ensuring your kitchen is both functional and aesthetically pleasing. We understand that your kitchen is more than just a room; it's the heart of your home where you cook, eat, and gather with loved ones. That's why we focus on creating a space that reflects your personality and lifestyle.",
-	  "heroImageAlt": "kitchen remodel banner"
-	},
-	"about": {
-	  "image1": "https://res.cloudinary.com/dzojhepyl/image/upload/v1715538151/services/kitchen-remodeling.jpg",
-	  "image1alt": "kitchen remodel image",
-	  "image2": "https://res.cloudinary.com/dzojhepyl/image/upload/v1715539290/services/B7E202BA-4993-4D75-9E5D-37D86D19178D_nkpd8y.jpg",
-	  "image2alt": "kitchen remodel image",
-	  "sectionH2": "Why Choose Us",
-	  "sectionP1": "We pride ourselves on our expertise and customer satisfaction. Our skilled professionals are dedicated to providing a kitchen that meets your needs and exceeds your expectations. We understand that your kitchen is more than just a room; it's the heart of your home where you cook, eat, and gather with loved ones. That's why we focus on creating a space that reflects your personality and lifestyle.",
-	  "sectionP2": "Our remodeling process is straightforward and efficient. We start with a consultation to discuss your vision and needs. Next, we provide a detailed quote and timeline. Once you're satisfied with the plan, we begin the work, ensuring every step is completed to the highest standard. We're committed to keeping you informed throughout the process.",
-	  "section2H2": "The Process",
-	  "section2P1": "Our remodeling process is straightforward and efficient. We start with a consultation to discuss your vision and needs. Next, we provide a detailed quote and timeline. Once you're satisfied with the plan, we begin the work, ensuring every step is completed to the highest standard. We're committed to keeping you informed throughout the process.",
-	  "section2P2": "Our skilled professionals will transform your kitchen, ensuring every detail is perfect. We're committed to ensuring your kitchen remodeling experience is smooth and enjoyable. We believe in the importance of communication and transparency.",
-	  "perks": [
-		{
-		  "heading": "Expertise",
-		  "paragraph": "Our team of skilled professionals is dedicated to providing you with the highest quality workmanship."
-		},
-		{
-		  "heading": "Quality Materials",
-		  "paragraph": "We offer a wide range of materials and finishes to suit your taste and budget."
-		},
-		{
-		  "heading": "Competitive Pricing",
-		  "paragraph": "We strive to offer competitive pricing without compromising on quality."
-		},
-		{
-		  "heading": "Custom Solutions",
-		  "paragraph": "We tailor our services to meet your specific needs and preferences."
-		},
-		{
-		  "heading": "Customer Satisfaction",
-		  "paragraph": "We're committed to ensuring your kitchen remodeling experience is smooth and enjoyable."
-		}
-	  ]
-	},
-	"howWeWork": [
-	  {
-		"id": 1,
-		"title": "Initial Consultation",
-		"description": {
-		  "p1": "Discuss project scope, budget, and timeline.",
-		  "p2": "Assess the existing space and take measurements.",
-		  "p3": "Identify client needs, preferences, and goals."
-		},
-		"imagePath": "path/to/initial_consultation_image.jpg"
-	  },
-	  {
-		"id": 2,
-		"title": "Design Phase",
-		"description": {
-		  "p1": "Develop initial design concepts and layouts.",
-		  "p2": "Create detailed architectural and engineering plans.",
-		  "p3": "Present design options to the client for feedback and approval."
-		},
-		"imagePath": "path/to/design_phase_image.jpg"
-	  },
-	  {
-		"id": 3,
-		"title": "Budgeting and Cost Estimation",
-		"description": {
-		  "p1": "Prepare a detailed cost estimate for the project.",
-		  "p2": "Review and finalize the budget with the client.",
-		  "p3": "Adjust the design or scope if needed to fit the budget."
-		},
-		"imagePath": "path/to/budgeting_cost_estimation_image.jpg"
-	  },
-	  {
-		"id": 4,
-		"title": "Permits and Approvals",
-		"description": {
-		  "p1": "Submit necessary plans and applications to local authorities.",
-		  "p2": "Obtain building permits and any other required approvals.",
-		  "p3": "Address any revisions or additional requirements from authorities."
-		},
-		"imagePath": "path/to/permits_approvals_image.jpg"
-	  },
-	  {
-		"id": 5,
-		"title": "Material Selection",
-		"description": {
-		  "p1": "Choose materials, fixtures, and finishes (e.g., flooring, cabinets, countertops).",
-		  "p2": "Source and order all necessary materials.",
-		  "p3": "Coordinate delivery schedules."
-		},
-		"imagePath": "path/to/material_selection_image.jpg"
-	  },
-	  {
-		"id": 6,
-		"title": "Scheduling and Planning",
-		"description": {
-		  "p1": "Develop a detailed project timeline and schedule.",
-		  "p2": "Coordinate with subcontractors and suppliers.",
-		  "p3": "Set milestones and deadlines for each phase of the project."
-		},
-		"imagePath": "path/to/scheduling_planning_image.jpg"
-	  },
-	  {
-		"id": 7,
-		"title": "Pre-Construction Preparation",
-		"description": {
-		  "p1": "Clear and prepare the workspace.",
-		  "p2": "Set up temporary utilities or structures as needed.",
-		  "p3": "Protect existing structures and surfaces from damage."
-		},
-		"imagePath": "path/to/preconstruction_preparation_image.jpg"
-	  },
-	  {
-		"id": 8,
-		"title": "Demolition",
-		"description": {
-		  "p1": "Safely remove existing structures, fixtures, and finishes.",
-		  "p2": "Dispose of debris and waste in accordance with regulations.",
-		  "p3": "Ensure a clean and safe worksite during demolition."
-		},
-		"imagePath": "path/to/demolition_image.jpg"
-	  },
-	  {
-		"id": 9,
-		"title": "Structural Work",
-		"description": {
-		  "p1": "Complete any necessary framing, foundation, or structural changes.",
-		  "p2": "Install or update plumbing, electrical, and HVAC systems.",
-		  "p3": "Ensure structural integrity and compliance with building codes."
-		},
-		"imagePath": "path/to/structural_work_image.jpg"
-	  },
-	  {
-		"id": 10,
-		"title": "Rough-In Work",
-		"description": {
-		  "p1": "Rough-in plumbing, electrical, and HVAC systems.",
-		  "p2": "Conduct inspections to ensure compliance with codes and standards.",
-		  "p3": "Prepare the space for insulation and drywall installation."
-		},
-		"imagePath": "path/to/roughin_work_image.jpg"
-	  },
-	  {
-		"id": 11,
-		"title": "Insulation and Drywall",
-		"description": {
-		  "p1": "Install insulation in walls, ceilings, and floors.",
-		  "p2": "Hang drywall and finish with tape and mud.",
-		  "p3": "Ensure proper sealing and soundproofing for comfort."
-		},
-		"imagePath": "path/to/insulation_drywall_image.jpg"
-	  },
-	  {
-		"id": 12,
-		"title": "Flooring and Tile Installation",
-		"description": {
-		  "p1": "Lay flooring materials (e.g., hardwood, tile, carpet).",
-		  "p2": "Install wall tiles in areas like bathrooms and kitchens.",
-		  "p3": "Ensure a durable and aesthetically pleasing finish."
-		},
-		"imagePath": "path/to/flooring_tile_installation_image.jpg"
-	  },
-	  {
-		"id": 13,
-		"title": "Cabinetry and Millwork",
-		"description": {
-		  "p1": "Install cabinets, countertops, and millwork (e.g., baseboards, crown molding).",
-		  "p2": "Ensure proper alignment and fit.",
-		  "p3": "Add finishing touches for a polished look."
-		},
-		"imagePath": "path/to/cabinetry_millwork_image.jpg"
-	  },
-	  {
-		"id": 14,
-		"title": "Painting and Finishing",
-		"description": {
-		  "p1": "Apply primer and paint to walls, ceilings, and trim.",
-		  "p2": "Install final finishes like hardware, fixtures, and accessories.",
-		  "p3": "Ensure a high-quality finish with attention to detail."
-		},
-		"imagePath": "path/to/painting_finishing_image.jpg"
-	  },
-	  {
-		"id": 15,
-		"title": "Final Inspections",
-		"description": {
-		  "p1": "Conduct final inspections to ensure all work meets quality standards.",
-		  "p2": "Address any punch list items or minor adjustments.",
-		  "p3": "Obtain client approval before finalizing the project."
-		},
-		"imagePath": "path/to/final_inspections_image.jpg"
-	  },
-	  {
-		"id": 16,
-		"title": "Cleaning and Debris Removal",
-		"description": {
-		  "p1": "Perform a thorough cleaning of the remodeled area.",
-		  "p2": "Remove all remaining debris and construction materials.",
-		  "p3": "Ensure the space is ready for use."
-		},
-		"imagePath": "path/to/cleaning_debris_removal_image.jpg"
-	  },
-	  {
-		"id": 17,
-		"title": "Client Walkthrough",
-		"description": {
-		  "p1": "Conduct a final walkthrough with the client.",
-		  "p2": "Review all completed work and ensure client satisfaction.",
-		  "p3": "Provide warranty information and maintenance tips."
-		},
-		"imagePath": "path/to/client_walkthrough_image.jpg"
-	  },
-	  {
-		"id": 18,
-		"title": "Project Completion and Handover",
-		"description": {
-		  "p1": "Finalize any outstanding paperwork or payments.",
-		  "p2": "Hand over the remodeled space to the client.",
-		  "p3": "Follow up to ensure the client is satisfied with the finished project."
-		},
-		"imagePath": "path/to/project_completion_handover_image.jpg"
-	  }
-	],
-	"servicesSlider": [
-	  {
-		"heading": "Kitchen Cabinet Installation",
-		"paragraph": "Upgrade your kitchen with our cabinet installation. Includes new cabinets, colorful doors, fixtures, and various colors.",
-		"url": "/kitchen-cabinet-installation",
-		"image": "service_image_kitchen_cabinets",
-		"price": "Price starts at $1,200"
-	  },
-	  {
-		"heading": "Kitchen Island Installation",
-		"paragraph": "Add a central hub to your kitchen with our island installation. Includes cabinets, countertops, and waterfall designs.",
-		"url": "/kitchen-island-installation",
-		"image": "service_image_kitchen_island",
-		"price": "Price starts at $1,500"
-	  },
-	  {
-		"heading": "Kitchen Countertop Replacement",
-		"paragraph": "Choose from marble, quartz, concrete, or tile for your new kitchen countertops.",
-		"url": "/kitchen-countertop-installation",
-		"image": "service_image_kitchen_countertops",
-		"price": "Price starts at $1,300"
-	  },
-	  {
-		"heading": "Kitchen Appliance Installation",
-		"paragraph": "Upgrade your kitchen appliances with our installation service. Includes refrigerator, dishwasher, range, oven, and more.",
-		"url": "/kitchen-appliances-installation",
-		"image": "service_image_kitchen_appliances",
-		"price": "Price starts at $1,800"
-	  },
-	  {
-		"heading": "Kitchen Electrical Installation",
-		"paragraph": "Ensure your kitchen is electrically safe with our installation service. Includes new circuits, outlets, and appliance wiring.",
-		"url": "/kitchen-electrical-installation",
-		"image": "service_image_kitchen_electrical",
-		"price": "Price starts at $1,000"
-	  },
-	  {
-		"heading": "Kitchen Backsplash Tile Installation",
-		"paragraph": "Add a stylish backsplash to your kitchen with our tile installation service. Includes subway tile, porcelain, and ceramic options.",
-		"url": "/kitchen-backsplash-tile-installation",
-		"image": "service_image_kitchen_backsplash",
-		"price": "Price starts at $1,200"
-	  },
-	  {
-		"heading": "Kitchen Flooring Installation",
-		"paragraph": "Choose from tile, hardwood, or floor tiles for your new kitchen flooring.",
-		"url": "/kitchen-tile-floor-installation",
-		"image": "service_image_kitchen_flooring",
-		"price": "Price starts at $1,100"
-	  },
-	  {
-		"heading": "Custom Kitchen Cabinetry Installation",
-		"paragraph": "Design your dream kitchen with our custom cabinetry service. Includes MDF, HDF, and custom doors.",
-		"url": "/custom-kitchen-cabinet-installation",
-		"image": "service_image_custom_kitchen_cabinets",
-		"price": "Price starts at $2,000"
-	  },
-	  {
-		"heading": "Kitchen Plumbing Installation",
-		"paragraph": "Ensure your kitchen plumbing is up to date with our installation service. Includes dishwasher, sink, and new plumbing.",
-		"url": "/kitchen-plumbing-installation",
-		"image": "service_image_kitchen_plumbing",
-		"price": "Price starts at $1,500"
-	  },
-	  {
-		"heading": "Kitchen Hardware Installation",
-		"paragraph": "Complete your kitchen with our hardware installation service. Includes cabinet handles, drawer knobs, and more.",
-		"url": "/kitchen-hardware-installation",
-		"image": "service_image_kitchen_hardware",
-		"price": "Price starts at $800"
-	  },
-	  {
-		"heading": "Kitchen Pantry Build",
-		"paragraph": "Expand your kitchen storage with our pantry build service. Includes new pantry doors, shelves, and ideas.",
-		"url": "/kitchen-pantry-build",
-		"image": "service_image_kitchen_pantry",
-		"price": "Price starts at $1,300"
-	  },
-	  {
-		"heading": "Kitchen Area Expansion",
-		"paragraph": "Open up your kitchen with our area expansion service. Includes kitchen renewal and addition projects.",
-		"url": "/kitchen-area-expansion",
-		"image": "service_image_kitchen_expansion",
-		"price": "Price starts at $2,500"
-	  },
-	  {
-		"heading": "Kitchen Layout Change",
-		"paragraph": "Rearrange your kitchen for better flow and functionality with our layout change service.",
-		"url": "/kitchen-layout-change",
-		"image": "service_image_kitchen_layout",
-		"price": "Price starts at $1,800"
-	  },
-	  {
-		"heading": "Kitchen Addition Build",
-		"paragraph": "Expand your kitchen space with our addition build service. Includes new kitchen layouts and design.",
-		"url": "/kitchen-addition-build",
-		"image": "service_image_kitchen_addition",
-		"price": "Price starts at $3,000"
-	  },
-	  {
-		"heading": "Kitchen Window Installation",
-		"paragraph": "Bring in natural light with our kitchen window installation service. Includes bay windows, awning windows, and more.",
-		"url": "/kitchen-window-installation",
-		"image": "service_image_kitchen_windows",
-		"price": "Price starts at $1,500"
-	  },
-	  {
-		"heading": "Kitchen Paint and Drywall",
-		"paragraph": "Refresh your kitchen's look with our paint and drywall service. Includes wall coloring and repair.",
-		"url": "/kitchen-drywall-and-paint",
-		"image": "service_image_kitchen_paint",
-		"price": "Price starts at $1,200"
-	  },
-	  {
-		"heading": "Kitchen Countertop Installation",
-		"paragraph": "Choose from concrete, marble, quartz, or butcher block for your new kitchen countertops.",
-		"url": "/kitchen-countertop-installation",
-		"image": "service_image_kitchen_countertops",
-		"price": "Price starts at $1,300"
-	  },
-	  {
-		"heading": "Kitchen ADA Compliance",
-		"paragraph": "Ensure your kitchen is accessible with our ADA compliance service. Includes design and installation.",
-		"url": "/ADA-kitchen-build",
-		"image": "service_image_kitchen_ADA",
-		"price": "Price starts at $2,000"
-	  },
-	  {
-		"heading": "Kitchen Architectural Permits",
-		"paragraph": "Secure your kitchen project with our architectural permits service. Includes drawings and consultation.",
-		"url": "/kitchen-architectural-permits",
-		"image": "service_image_kitchen_permits",
-		"price": "Price starts at $1,000"
-	  },
-	  {
-		"heading": "Kitchen Design Services",
-		"paragraph": "Transform your kitchen with our design services. Includes new design, on-demand design, and interior design.",
-		"url": "/kitchen-design-services",
-		"image": "service_image_kitchen_design",
-		"price": "Price starts at $1,500"
-	  },
-	  {
-		"heading": "Materials for Kitchen",
-		"paragraph": "Find everything you need for your kitchen renovation with our materials service. Includes cabinets, tile, flooring, and more.",
-		"url": "/kitchen-materials",
-		"image": "service_image_kitchen_materials",
-		"price": "Price starts at $1,000"
-	  }
-	],
-	"faqItems": [
-	  {
-		"question": "How long does a kitchen remodel take?",
-		"answer": "Most projects take between 3 to 6 months to complete. This includes time for design, construction, and final walkthrough."
-	  },
-	  {
-		"question": "Do you offer financing options?",
-		"answer": "Yes, we offer financing options to help you manage the cost of your kitchen remodel. Contact us for more information on our financing options."
-	  },
-	  {
-		"question": "What materials and finishes do you offer?",
-		"answer": "We offer a wide range of materials and finishes, including ceramic tiles, granite countertops, and various types of paint and wallpaper. We're committed to providing you with the best options to suit your taste and budget."
-	  },
-	  {
-		"question": "How can I ensure the quality of the work?",
-		"answer": "We employ only the highest quality materials and workmanship to ensure your kitchen remodel meets the highest standards. Additionally, we provide a warranty on our work to give you peace of mind."
-	  },
-	  {
-		"question": "What is the process for a kitchen remodel?",
-		"answer": "Our process is straightforward and efficient. We start with a consultation, provide a detailed quote, and keep you informed throughout the work."
-	  },
-	  {
-		"question": "Why choose our Kitchen Remodeling Services?",
-		"answer": "We're dedicated to providing a kitchen that meets your needs and exceeds your expectations. We understand that your kitchen is the heart of your home."
-	  }
-	],
-	"markdown": "## Kitchen Remodeling: Your Path to a Beautiful Space\n\nOur expert services make kitchen remodeling easier. We focus on creating a space that reflects your personality and lifestyle.\n\n### Why Choose Us\n\nWe're dedicated to providing a kitchen that meets your needs and exceeds your expectations. We understand that your kitchen is the heart of your home.\n\n### The Process\n\nOur process is straightforward and efficient. We start with a consultation, provide a detailed quote, and keep you informed throughout the work.\n\n### Frequently Asked Questions\n\n**What is the cost range for kitchen remodeling?**\n\nThe cost can vary between $1,000 and $5,000, depending on the project scope, materials, and complexity. It's important to get a detailed quote from a reputable contractor to understand the full cost.\n\n**How long does a kitchen remodel take?**\n\nMost projects take between 3 to 6 months to complete. This includes time for design, construction, and final walkthrough.\n\n**Do you offer financing options?**\n\nYes, we offer financing options to help you manage the cost of your kitchen remodel. Contact us for more information on our financing options.\n\n**What materials and finishes do you offer?**\n\nWe offer a wide range of materials and finishes, including ceramic tiles, granite countertops, and various types of paint and wallpaper. We're committed to providing you with the best options to suit your taste and budget.\n\n**How can I ensure the quality of the work?**\n\nWe employ only the highest quality materials and workmanship to ensure your kitchen remodel meets the highest standards. Additionally, we provide a warranty on our work to give you peace of mind.\n\n### Contact Us\n\nReady to transform your kitchen? Contact our Kitchen Remodeling Services today to get started on your project. We're here to help you create a beautiful, functional space that you'll love for years to come."
-  }
+  "city": "lowercase",
+  "title": "metaTitle for the page 50-60",
+  "description": "metaDescription 130-160",
+  "imageTextSection": {
+    "image": "",
+    "imageAlt": "",
+    "phrase": "a short phrase or quote about home, style etc",
+    "h1": "50-60",
+    "paragraph1": "length: 320-400",
+    "paragraph2": "length: 323-400",
+    "price": "related and actual service (starts at ...)"
+  },
+  "aboutSection": {
+    "h2": "50-60",
+    "markdown": "write about our company, our values, experience, and approach in react markdown 500-500 characters. Established in 2011. Don’t use the word about, just the information",
+    "image": "",
+    "imageAlt": ""
+  },
+  "perks": [
+    {
+      "heading": "30-50",
+      "paragraph": "135-150"
+    },
+    {
+      "heading": "30-50",
+      "paragraph": "135-150"
+    },
+    {
+      "heading": "30-50",
+      "paragraph": "135-150"
+    },
+    {
+      "heading": "30-50",
+      "paragraph": "135-150"
+    },
+    {
+      "heading": "30-50",
+      "paragraph": "135-150"
+    }
+  ],
+  "about": {
+    "phrase1": "quote or phrase about style or home or service 50-80",
+    "phrase2": "quote or phrase about style or home or service 50-80",
+    "priceLine1": "related and actual price (starts at ...)",
+    "priceLine2": "related and actual price (starts at ...)",
+    "image1": "",
+    "image1alt": "",
+    "image2": "",
+    "image2alt": "",
+    "sectionH2": "50-60",
+    "sectionP1": "230-400",
+    "sectionP2": "230-400",
+    "section2H2": "50-60",
+    "section2P1": "230-400",
+    "section2P2": "230-400",
+    "perks": [
+      {
+        "heading": "Expertise",
+        "paragraph": "length: 83"
+      },
+      {
+        "heading": "Quality Materials",
+        "paragraph": "length: 75"
+      },
+      {
+        "heading": "Competitive Pricing",
+        "paragraph": "length: 52"
+      },
+      {
+        "heading": "Custom Solutions",
+        "paragraph": "length: 57"
+      },
+      {
+        "heading": "Customer Satisfaction",
+        "paragraph": "length: 93"
+      }
+    ]
+  },
+  "section2H2": "Custom Bathrooms and Beyond: What We Offer",
+  "section2P1": "length: 323",
+  "section2P2": "length: 235",
+  "howWeWork": [
+    {
+      "id": 1,
+      "title": "Initial Consultation",
+      "description": {
+        "p1": "Discuss project scope, budget, and timeline.",
+        "p2": "Assess the existing space and take measurements.",
+        "p3": "Identify client needs, preferences, and goals."
+      },
+      "imagePath": "path/to/initial_consultation_image.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Design Phase",
+      "description": {
+        "p1": "Develop initial design concepts and layouts.",
+        "p2": "Create detailed architectural and engineering plans.",
+        "p3": "Present design options to the client for feedback and approval."
+      },
+      "imagePath": "path/to/design_phase_image.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Budgeting and Cost Estimation",
+      "description": {
+        "p1": "Prepare a detailed cost estimate for the project.",
+        "p2": "Review and finalize the budget with the client.",
+        "p3": "Adjust the design or scope if needed to fit the budget."
+      },
+      "imagePath": "path/to/budgeting_cost_estimation_image.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Permits and Approvals",
+      "description": {
+        "p1": "Submit necessary plans and applications to local authorities.",
+        "p2": "Obtain building permits and any other required approvals.",
+        "p3": "Address any revisions or additional requirements from authorities."
+      },
+      "imagePath": "path/to/permits_approvals_image.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Material Selection",
+      "description": {
+        "p1": "Choose materials, fixtures, and finishes (e.g., flooring, cabinets, countertops).",
+        "p2": "Source and order all necessary materials.",
+        "p3": "Coordinate delivery schedules."
+      },
+      "imagePath": "path/to/material_selection_image.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Scheduling and Planning",
+      "description": {
+        "p1": "Develop a detailed project timeline and schedule.",
+        "p2": "Coordinate with subcontractors and suppliers.",
+        "p3": "Set milestones and deadlines for each phase of the project."
+      },
+      "imagePath": "path/to/scheduling_planning_image.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Pre-Construction Preparation",
+      "description": {
+        "p1": "Clear and prepare the workspace.",
+        "p2": "Set up temporary utilities or structures as needed.",
+        "p3": "Protect existing structures and surfaces from damage."
+      },
+      "imagePath": "path/to/preconstruction_preparation_image.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Demolition",
+      "description": {
+        "p1": "Safely remove existing structures, fixtures, and finishes.",
+        "p2": "Dispose of debris and waste in accordance with regulations.",
+        "p3": "Ensure a clean and safe worksite during demolition."
+      },
+      "imagePath": "path/to/demolition_image.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Construction and Installation",
+      "description": {
+        "p1": "Execute construction work as per the design plan.",
+        "p2": "Install new structures, systems, and finishes.",
+        "p3": "Ensure quality and compliance with building codes."
+      },
+      "imagePath": "path/to/construction_installation_image.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Final Walkthrough and Handover",
+      "description": {
+        "p1": "Conduct a final walkthrough with the client.",
+        "p2": "Identify any remaining tasks or touch-ups (punch list) and complete them.",
+        "p3": "Finalize all work, clean the site, and hand over the remodeled space to the client."
+      },
+      "imagePath": "path/to/final_walkthrough_handover_image.jpg"
+    }
+  ],
+  "markdown1": "follow instructions above",
+  "markdown2": "follow instructions above",
+  "whySection": {
+    "whyArray": [
+      {
+        "id": 1,
+        "title": "Consultation & Design",
+        "description": "length: 99"
+      },
+      {
+        "id": 2,
+        "title": "Material Selection",
+        "description": "length: 99-130"
+      },
+      {
+        "id": 3,
+        "title": "Permit Acquisition & Scheduling",
+        "description": "length: 99-130"
+      },
+      {
+        "id": 4,
+        "title": "Professional Installation",
+        "description": "length: 99-130"
+      },
+      {
+        "id": 5,
+        "title": "Final Inspection",
+        "description": "length: 99-130"
+      }
+    ],
+    "whyGrid": [
+
+      "reasons 20-30",
+      "20-30",
+      "20-30",
+      "20-30"
+    ]
+  },
+  "faqItems": [
+    {
+      "question": "length: 166",
+      "answer": "length: 276"
+    }
+  ],
+  "markdown3": "follow instructions above"
+}
+
+
+
+
+
+
+
+
+
+  using these keywords write in react-markdown related to RENOVA, describing our services and what we do, how we handle issues etc
+
+  Keywords (Density: Ensure the keyword density is between 1-2% for every 100 words written, use also keyword variants that are close to the keywords provided and from the services above) Variation: Alternate the tone of writing between categories in an unpredictable pattern unique to the page.
+  Home improvement, remodeler, bathroom renovation, kitchen renovation, bath fitter cost, bathroom renovation cost, new kitchen cost, kitchen renovation cost, kitchen and bath, cost to finish basement, basement finishing, kitchen makeover, basement renovations, renovation contractor, home renovation contractors, tub to shower conversion, bathroom makeovers, bathtub replacement, house renovations, small bathroom renovations, bathroom contractors, bathroom remodelers, kitchen remodelers, average cost to finish a basement, home addition contractors, rebath cost, basement contractors, cost to redo bathroom, home renovation services, home renovation companies, kitchen contractors, small kitchen renovation, cost to redo kitchen, kitchen cost, kitchen and bathroom, house renovation contractor, bathroom designers, bathroom repair, old house renovation, small bathroom makeovers, bathrooms on a budget, stairs renovation, kitchen redesign, shower renovation, bathtub to shower conversion, attic renovation, cost of renovating a house, kitchen and bathroom renovations, tile installation, floor tile, bathroom tile, shower tile, backsplash tile, ceramic tile, porcelain tile, mosaic tile, heated tile floor, basement floor tile, subway tile, fireplace tile, outdoor tile, countertop installation, quartz countertops, granite countertops, laminate countertops, soapstone countertops, butcher block, concrete countertop, stainless steel countertops, porcelain countertop, kitchen cabinet installation, kitchen cabinets, cabinet design, cabinet installation, bathroom cabinets, built-in cabinets, storage cabinets, electrical installation, electrical panel, house rewire, electrical floor heating, lighting service, ceiling fans installation, under cabinet lighting, landscape lighting, HVAC installation, split system installation, flooring installation, hardwood flooring, laminate flooring, carpet, LVT flooring, backyard deck installation, Trex deck, composite deck, custom deck, pool deck construction, rooftop deck building, deck railing installation, building deck stairs and steps, timber decking, window installation, window replacement, egress window, energy-efficient windows, skylight installation, commercial windows, door installation, exterior doors, garage doors, sliding doors, entry door, architectural service, home design, structural engineering, civil engineering, interior design, landscape architect, 3-D rendering, seismic retrofitting, foundation repair, GeoTech engineering, plumbing, kitchen plumbing, bathroom plumbing, Jacuzzi installation, toilet installation, home repiping, gas line installation, sewer line repair, kitchen remodel, kitchen design, kitchen tile, kitchen layout, kitchen cabinets, kitchen countertops, kitchen flooring, kitchen appliances, kitchen lighting, patio kitchen, kitchen plumbing, bathroom remodel, bathroom layout, bathroom design, bathroom cabinetry, heated bathroom floor, bathroom expansion, bathroom shower, bathroom fixtures, bathroom plumbing, bathroom tile, roofing, metal roofing, roof replacement, commercial roofing, flat roofing, skylights, shingles roof, asphalt roofing, siding, vinyl siding, Hardie siding, cedar siding, aluminum siding, stone veneer, composite siding, excavation service, site preparation, earthworks, grading, land clearing, basement finishing, basement flooring, basement remodel, basement entertainment center, basement bathroom, basement waterproofing, basement insulation, basement bar, basement windows, attic finishing, attic ladder, attic insulation, attic drywall, attic windows and skylights, attic storage solutions, attic ventilation, attic lighting, attic heating and cooling, attic bathroom addition, landscaping, landscape design, grading, planting, patio installation, sod installation, fence installation, retaining walls, fountain, fire pits, path installation, irrigation installation, landscape lighting, painting, interior painting, exterior painting, cabinet painting, trim painting, room painting, ceiling painting, deck painting, siding painting, fence painting, stucco, masonry services, brick laying and repair, stone masonry, seismic retrofitting, chimney masonry, concrete block, masonry restoration, stone veneer, commercial masonry, Tile Installation: floor tiling, wall tile, tile setter, tile installation cost, tile patterns, grout installation, sealing tile, tile for shower, tile for backsplash, DIY tile installation, professional tile installer, Countertop Installation: countertop replacement, kitchen countertop options, bathroom countertop ideas, granite vs. quartz countertops, solid surface countertops, installing butcher block countertops, cost to install countertops, Kitchen Cabinet Installation: custom kitchen cabinets, pre-assembled cabinets, RTA cabinets, kitchen cabinet hardware, installing kitchen backsplash, kitchen cabinet refacing, Electrical Installation: electrical wiring, light switch installation, outlet installation, electrical troubleshooting, home safety inspection, landscape lighting design, HVAC Installation: furnace installation, air conditioner installation, ductless mini split system, HVAC system maintenance, smart thermostat installation, Flooring Installation: engineered hardwood flooring, waterproof laminate flooring, carpet installation types, vinyl plank flooring installation, DIY flooring installation tips, Backyard Deck Installation: deck builder near me, deck materials, composite deck vs. wood deck, building a deck permit, deck railing ideas, deck staining and sealing, Window Installation: double pane windows, vinyl windows cost, installing bay windows, window tinting, window replacement for energy efficiency, Door Installation: French doors, sliding glass door installation, front door replacement, garage door opener installation, Architectural Service: architectural drawings, drafting services, home renovation contractor, interior design consultation, 3D home design software, kitchen remodel plans, Plumbing: plumbing repair, clogged drain repair, faucet installation, water heater installation, leak detection and repair, repiping a house, Kitchen Remodel: kitchen renovation ideas, kitchen island installation, kitchen backsplash ideas, kitchen appliance package, kitchen lighting design, Bathroom Remodel: bathroom vanity installation, walk-in shower installation, bathroom ventilation fan, bathroom mirror installation, bathroom flooring options, Roofing: roof leak repair, roof inspection, roof replacement cost, flat roof repair, metal roof installation, asphalt shingle roof types, Siding: James Hardie siding cost, vinyl siding installation, cedar siding benefits, aluminum siding colors, stone veneer for exterior walls, Excavation Service: foundation excavation, backyard drainage solutions, land leveling services, basement excavation cost, Basement Finishing: basement waterproofing methods, basement egress window installation, basement bar ideas, basement flooring options, Attic Finishing: attic insulation types, attic stairs installation, attic storage solutions, attic ventilation system, converting attic into a bedroom, Landscaping: landscaping for beginners, backyard patio ideas, installing sod, types of fencing for backyards, retaining wall construction, Painting: house painting cost estimator, interior painting colors, exterior painting tips, cabinet refinishing, trim painting techniques, Masonry Services: brick paver installation, stone fireplace construction, concrete driveway repair, chimney sweep and inspection, stone veneer siding installation
+- Consistency:  Do not use words like: Enhance, elevate, top remodel, expert,
+- Synonyms: Use synonyms for descriptive content on the same page to avoid repetition.
+- Style: Match the style of writing to someone in architecture, design, or construction, but keep it readable for an average person.
+- Length: The suggested length for each text row can deviate by 10% more or less. Avoid filler words.
+
+
+"markdown1" : "h2, h3, h4, h5, ul, ol are allowed. Length:: 800-1000 characters never use h1 here !/",
+"markdown2" : "h2, h3, h4, h5, ul, ol are allowed. Length:: 800-1000 characters never use h1 here !/",
+"markdown3" : "h2, h3, h4, h5, ul, ol are allowed. Length:: 800-1500 characters never use h1 here !/"

@@ -17,57 +17,69 @@ import { ServiceAreas } from "@/components/BottomButtons/BottomButtons";
 import { OurPartners } from "@/components/OurPartners/OurPartners";
 import { LocationsList } from "@/components/LocationsList/LocationsList";
 import ServicesAbout from "@/app/[services]/components/ServicesAbout";
+import { CatalogBanner } from "@/app/catalog/[[...slug]]/components/CatalogBanner";
+import { ImageTextSection } from "@/components/ImageTextSection/ImageTextSection";
 
 type LocationParams = {
-    location: string[];
+	location: string[];
+};
+
+export async function generateStaticParams({
+	params,
+}: {
+	params: LocationParams;
+}): Promise<any> {
+	const url = await fetch(`http://localhost:4100/location/`).then((res) =>
+		res.json(),
+	);
+
+	return [];
 }
 
-export async function generateStaticParams({ params }: {params: LocationParams}): Promise<any> {
-    const url = await fetch(`http://localhost:4100/location/`).then((res) =>
-        res.json(),
-    );
+export async function generateMetadata(
+	{ params }: { params: LocationParams },
+	parent: any,
+): Promise<any> {
+	const city = params.location;
+	const product = await fetch(`http://localhost:4100/location/${city}`).then(
+		(res) => res.json(),
+	);
+	const previousImages = (await parent).openGraph?.images || [];
 
-    return [];
-}
-
-export async function generateMetadata( { params }: { params: LocationParams }, parent: any): Promise<any> {
-	const city = params.location
-    const product = await fetch(`http://localhost:4100/location/${city}`).then(
-        (res) => res.json(),
-    );
-    const previousImages = (await parent).openGraph?.images || [];
-
-    return {
-        title: product[0].title,
+	return {
+		title: product[0].title,
 		description: product[0].description,
-        openGraph: {
-            images: ["/some-specific-page-image.jpg", ...previousImages],
-        },
-    };
+		openGraph: {
+			images: ["/some-specific-page-image.jpg", ...previousImages],
+		},
+	};
 }
 
 async function getLocationData(params: LocationParams): Promise<any> {
-	const city = params.location
-    const res = await fetch(`http://localhost:4100/location/${city}`);
+	const city = params.location;
+	const res = await fetch(`http://localhost:4100/location/${city}`);
 
-    if (!res.ok) {
-        throw new Error("Failed to fetch data");
-    }
+	if (!res.ok) {
+		throw new Error("Failed to fetch data");
+	}
 
-    return res.json();
+	return res.json();
 }
 
-export default async function Page({ params }: {params: LocationParams}): Promise<any> {
-
-
+export default async function Page({
+	params,
+}: {
+	params: LocationParams;
+}): Promise<any> {
 	const data = await getLocationData(params);
 
 	const props = { ...data[0] };
-console.log(data)
 	return (
 		<main>
 			{/* <BackgroundPictures pageType={backgroundPicturesMain} /> */}
 			<Slider id="hero" />
+			<CatalogBanner />
+			<ImageTextSection {...props.imageTextSection} />
 			<ServicesAbout {...props.about} />
 			<OurServices />
 			<HowWeWork {...props} />
@@ -84,6 +96,7 @@ console.log(data)
 			<MyMarkdown markdown={props.markdown2} />
 			<OurPartners />
 			<ServiceAreas />
+			<MyMarkdown markdown={props.markdown3} />
 			<LocationsList />
 		</main>
 	);

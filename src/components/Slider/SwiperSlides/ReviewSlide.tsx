@@ -3,13 +3,13 @@ import Image from "next/image";
 import star from "/public/logo/material-symbols_star.svg";
 
 type Props = {
-	image: string,
-	service: string,
-	date: string,
-	title: string,
-	text: string,
-	name: string,
-}
+	image: string;
+	service: string;
+	date: string;
+	title: string;
+	text: string;
+	name: string;
+};
 
 export const ReviewSlide: React.FC<Props> = ({
 	image,

@@ -1,8 +1,8 @@
 import { FormMain } from "@/components/FormMain/FormMain";
 import Image from "next/image";
-import image_bottom from "/public/contentImages/countertopHero/countertop-in-modern-kitchen-2021-08-26-15-44-13-utc 1.png"
+import image_bottom from "/public/contentImages/countertopHero/countertop-in-modern-kitchen-2021-08-26-15-44-13-utc 1.png";
 interface ServicesHeroProps {
-	h1: string
+	h1: string;
 	heroH2: string;
 	imageBottom: string;
 	heroP: string;
@@ -12,7 +12,7 @@ export const ServicesHero: React.FC<ServicesHeroProps> = ({
 	h1,
 	heroH2,
 	heroP,
-	imageBottom
+	imageBottom,
 }) => {
 	return (
 		<section className="container h-full relative pr-[10px]  pt-[21px]  sm:pt-[50px] mb-10">

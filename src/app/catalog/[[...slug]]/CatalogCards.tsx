@@ -2,11 +2,11 @@ import { ItemCard } from "@/components/ItemCard/ItemCard";
 
 interface CatalogCardsProps {
 	products: any[]; // Replace `Product` with your actual product type (union or interface)
-  }
+}
 
-export const CatalogCards:React.FC<CatalogCardsProps> = async ({ products }) => {
-
-
+export const CatalogCards: React.FC<CatalogCardsProps> = async ({
+	products,
+}) => {
 	return (
 		<section
 			className="container relative z-10 justify-center  component-mb

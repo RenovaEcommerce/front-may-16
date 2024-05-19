@@ -1,5 +1,5 @@
 import React from "react";
-import  ProductImage from "./components/ProductImage";
+import ProductImage from "./components/ProductImage";
 import { Characteristics } from "./components/Characteristics";
 import { ProductImageSmallerScreens } from "./components/ProductImageSmallerScreens";
 import { ImageSwiper } from "./components/ImageSwiper";
@@ -7,25 +7,24 @@ import { MyMarkdown } from "@/components/MyMarkdown/MyMarkdown";
 
 // Define types for product data structure
 interface ProductData {
-  category: string;
-  data: { [key: string]: unknown }[]; // Assuming dynamic data structure within 'data'
-  // Add specific properties based on your API response if known
+	category: string;
+	data: { [key: string]: unknown }[]; // Assuming dynamic data structure within 'data'
+	// Add specific properties based on your API response if known
 }
 
 type Props = {
-  params: { url: string[] };
-  searchParams: { [key: string]: string | string[] | undefined };
+	params: { url: string[] };
+	searchParams: { [key: string]: string | string[] | undefined };
 };
 
 export interface Variant {
 	url: string;
 	image: string;
 	color: string;
-  }
-  
-const product: React.FC<Props> = async ({ params, searchParams }) => {
+}
 
-  async function getData(): Promise<ProductData> {
+const product: React.FC<Props> = async ({ params, searchParams }) => {
+	async function getData(): Promise<ProductData> {
 		const res = await fetch(
 			`http://localhost:4100/products/carpets/url/${params.url}`,
 		);
@@ -37,13 +36,12 @@ const product: React.FC<Props> = async ({ params, searchParams }) => {
 		const data = await res.json();
 
 		return data;
-  }
+	}
 
-  const productData = await getData();
-  const product = productData.data[0]
+	const productData = await getData();
+	const product = productData.data[0];
 
-
-  return (
+	return (
 		<main className="relative z-10">
 			<h2 className="title-white inside-mb container">
 				{productData.category}
@@ -74,7 +72,7 @@ const product: React.FC<Props> = async ({ params, searchParams }) => {
 			<MyMarkdown markdown={product.markdown as string} />
 			{/* <ServicesAbout /> */}
 		</main>
-  );
+	);
 };
 
 export default product;

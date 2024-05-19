@@ -1,19 +1,18 @@
-
 import type { StaticImageData } from "next/image";
 import { butttonManufacturersLogos } from "../manufacturersLogos/manufacturersLogos";
 
 type CatalogOption = {
-    text: string;
-    url: string;
+	text: string;
+	url: string;
 	logo?: string;
 };
 
 type CatalogOptions = {
-    [category: string]: CatalogOption[];
+	[category: string]: CatalogOption[];
 };
 
-export const catalogOptionsHero: CatalogOptions =  {
-	"cabinets": [
+export const catalogOptionsHero: CatalogOptions = {
+	cabinets: [
 		{ text: "SHAKER CABINETS", url: "/catalog/cabinets/style/shaker" },
 		{
 			text: "CONTEMPORARY CABINETS",
@@ -37,7 +36,7 @@ export const catalogOptionsHero: CatalogOptions =  {
 		{ text: "WOOD CABINETS", url: "/catalog/cabinets/material/wood" },
 		{ text: "WOOD CABINETS", url: "/catalog/cabinets/material/mdf" },
 	],
-	"tile": [
+	tile: [
 		{ text: "PORCELAIN TILE", url: "/catalog/tile/material/porcelain" },
 		{ text: "MOSAIC TILE", url: "/catalog/tile/type/mosaic" },
 		{ text: "SUBWAY TILE", url: "/catalog/tile/type/subway" },
@@ -57,7 +56,7 @@ export const catalogOptionsHero: CatalogOptions =  {
 			url: "/catalog/tile/type/decor-trims",
 		},
 	],
-	"countertops": [
+	countertops: [
 		{
 			text: "QUARTZ COUNTERTOPS",
 			url: "/catalog/countertops/material/quartz",
@@ -113,7 +112,7 @@ export const catalogOptionsHero: CatalogOptions =  {
 			url: "/catalog/countertops/thickness/3centimetres",
 		},
 	],
-	"windows" : [
+	windows: [
 		{
 			text: "VINYL WINDOWS",
 			url: "/catalog/windows/material/vinyl",
@@ -152,7 +151,7 @@ export const catalogOptionsHero: CatalogOptions =  {
 			url: "/catalog/windows/style/casement",
 		},
 	],
-	"doors": [
+	doors: [
 		{
 			text: "FIBERGLASS DOORS ",
 			url: "/catalog/doors/material/fiberglass",
@@ -195,7 +194,7 @@ export const catalogOptionsHero: CatalogOptions =  {
 			url: "/catalog/use/bedroom",
 		},
 	],
-	"hardwood": [
+	hardwood: [
 		{
 			text: "ENGINEERED HARDWOOD",
 			url: "/catalog/hardwood/material/engineered",
@@ -234,7 +233,7 @@ export const catalogOptionsHero: CatalogOptions =  {
 			url: "/catalog/hardwood/color/red",
 		},
 	],
-	"carpet": [
+	carpet: [
 		{
 			text: "NYLON CARPET",
 			url: "/catalog/carpet/material/nylon",
@@ -281,7 +280,7 @@ export const catalogOptionsHero: CatalogOptions =  {
 			url: "/catalog/carpet/manufacturer/shaw",
 		},
 	],
-	"decking": [
+	decking: [
 		{
 			text: "GRAY DECKING",
 			url: "/catalog/decking/color/gray",
@@ -311,17 +310,17 @@ export const catalogOptionsHero: CatalogOptions =  {
 };
 
 interface CatalogOptionBottom {
-    text: string;
-    url: string;
-    logo?: StaticImageData;
+	text: string;
+	url: string;
+	logo?: StaticImageData;
 }
 
 interface SubcategoryOptions {
-    [subcategory: string]: CatalogOptionBottom[];
+	[subcategory: string]: CatalogOptionBottom[];
 }
 
 interface CategoryOptions {
-    [category: string]: SubcategoryOptions;
+	[category: string]: SubcategoryOptions;
 }
 
 export const catalogOptionsBottom: CategoryOptions = {
@@ -419,7 +418,7 @@ export const catalogOptionsBottom: CategoryOptions = {
 				text: "SHAKER CABINETS",
 				url: "/catalog/cabinets/style/shaker",
 			},
-			
+
 			{
 				text: "RAISED PANEL",
 				url: "/catalog/cabinets/style/raised-panel",
