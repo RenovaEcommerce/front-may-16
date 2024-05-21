@@ -8,9 +8,9 @@ import { dropdowns } from "@/constants/header/headerProperties";
 
 export const Footer: React.FC = () => {
 	return (
-		<footer className="constainer  text-main-gray z-10 relative border-t-[1px] border-solid border-black pt-5">
-			<div className="flex w-max mx-auto max-sm:items-center max-sm:text-center items-start md:flex-row flex-col pb-[60px]  md:gap-[20px] lg:gap-[90px] xl:gap-[157px] ">
-				<Image src={logo_bottom} width={145} height={159} alt="" />
+		<footer className="container  text-main-gray z-10 relative border-t-[1px] border-solid border-black pt-5">
+			<div className="flex  w-max mx-auto max-sm:items-center max-sm:text-center items-start md:flex-row flex-col pb-[60px]  md:gap-[20px] lg:gap-[90px] xl:gap-[157px] ">
+				<Image src={logo_bottom} width={145} height={159} alt="renova logo" />
 				<ul className="max-w-[194px] max-md:mt-[40px]">
 					<li className="mb-[20px] max-sm:hidden">
 						6th Floor, 1606 ASCEND, Adress Where City 400601

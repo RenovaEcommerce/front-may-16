@@ -4,16 +4,18 @@ import Link from "next/link";
 
 export const LocationsList: React.FC = () => {
 	return (
-		<section className="container relative z-30">
-			<h3 className="text-title text-white inside-mb">
-				Services Locations
-			</h3>
-			<div className="flex overflow-x-auto no-scrollbar">
-				<ul className="grid grid-cols-3 grid-rows-6 grid-flow-col    ">
+		<section className="container relative z-30 inside-mb">
+			<h3 className="text-title text-white inside-mb">Locations</h3>
+			<div
+				className="flex overflow-x-auto no-scrollbar"
+				style={{ height: "calc(100% / 5)" }}
+			>
+				<ul className="flex flex-wrap justify-between h-full text-left">
 					{locationsList.map((location) => (
 						<li
 							key={location.location}
-							className="gray-paragraph hover:text-white"
+							className="gray-paragraph hover:text-white hover:cursor-pointer flex-grow"
+							style={{ flex: "1 0 18%", maxWidth: "18%" }} // 18% for 5 items per row considering margins
 						>
 							<Link href={location.link}>
 								{location.location}

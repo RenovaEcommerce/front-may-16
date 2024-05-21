@@ -18,6 +18,8 @@ import { CatalogBanner } from "../catalog/[[...slug]]/components/CatalogBanner";
 import { BackgroundPictures } from "@/components/BackgroundPictures/BackgroundPictures";
 import { backgroundPicturesServices } from "@/constants/background/backgroundPictures";
 import { LocationsList } from "@/components/LocationsList/LocationsList";
+import { BlogCards } from "../blog/components/BlogCards";
+import { getBlogData } from "@/lib/getBlogData/getBlogData";
 
 type Props = {
 	params: { services: string };
@@ -60,6 +62,10 @@ const Services: React.FC<{ params: { services: string } }> = async ({
 }) => {
 	const servicesData = await getServicesData(params);
 	const servicesPageData = servicesData[0];
+
+	let blogData;
+	/* blogData = await getBlogData(servicesPageData.category); */
+
 	return (
 		<main>
 			<BackgroundPictures pageType={backgroundPicturesServices} />
@@ -72,13 +78,16 @@ const Services: React.FC<{ params: { services: string } }> = async ({
 			<ServicesAbout {...servicesPageData.about} />
 			<CatalogBanner />
 			<HowWeWork howWeWork={servicesPageData.howWeWork} />
+			<MyMarkdown {...servicesPageData} />
 			<TopProducts />
+			{/* <BlogCards cards={blogData} /> */}
 			<Manufacturers />
+			<MyMarkdown {...servicesPageData.markdown} />
 			<ServicesSlider {...servicesPageData} />
 			<FAQ {...servicesPageData} />
 			<ServicesReviews />
 			{/* <ServicesButtons {...servicesPageData} /> */}
-			<MyMarkdown {...servicesPageData} />
+			<MyMarkdown markdown = {servicesPageData.markdown1} />
 			<ContactUs />
 			<LocationsList />
 		</main>
