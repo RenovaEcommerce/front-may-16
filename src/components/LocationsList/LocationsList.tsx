@@ -5,17 +5,13 @@ import Link from "next/link";
 export const LocationsList: React.FC = () => {
 	return (
 		<section className="container relative z-30 inside-mb">
-			<h3 className="text-title text-white inside-mb">Locations</h3>
-			<div
-				className="flex overflow-x-auto no-scrollbar"
-				style={{ height: "calc(100% / 5)" }}
-			>
-				<ul className="flex flex-wrap justify-between h-full text-left">
-					{locationsList.map((location) => (
+			<h3 className="text-title text-white inside-mb">Washington</h3>
+			<div className="inside-mb">
+				<ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-8 gap-x-4 text-left">
+					{locationsList.wa.map((location) => (
 						<li
 							key={location.location}
-							className="gray-paragraph hover:text-white hover:cursor-pointer flex-grow"
-							style={{ flex: "1 0 18%", maxWidth: "18%" }} // 18% for 5 items per row considering margins
+							className="gray-paragraph hover:text-white hover:cursor-pointer whitespace-nowrap"
 						>
 							<Link href={location.link}>
 								{location.location}
@@ -24,6 +20,22 @@ export const LocationsList: React.FC = () => {
 					))}
 				</ul>
 			</div>
+			<h3 className="text-title text-white inside-mb">British Columbia</h3>
+			<div>
+				<ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-8 gap-x-4 text-left">
+					{locationsList.bc.map((location) => (
+						<li
+							key={location.location}
+							className="gray-paragraph hover:text-white hover:cursor-pointer whitespace-nowrap"
+						>
+							<Link href={location.link}>
+								{location.location}
+							</Link>
+						</li>
+					))}
+				</ul>
+			</div>
+			
 		</section>
 	);
 };

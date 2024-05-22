@@ -261,11 +261,11 @@ select {
 
 .markdown h1,
 .markdown h2 {
- @apply text-title text-white leading-[22px] md:leading-[28px] pb-5;
+ @apply font-semibold text-title text-white leading-[22px] md:leading-[28px] pb-5;
 }
 
-.markdown h3 {
- @apply text-lg font-semibold text-title text-white mb-2;
+.markdown h3, h4, h5, h6 {
+ @apply text-lg text-title text-white mb-2;
 }
 
 .markdown p {
@@ -278,7 +278,7 @@ select {
 
 .markdown ul,
 .markdown ol {
- @apply list-inside text-white list-disc pl-5;
+ @apply list-inside text-white list-disc pl-5 mb-5;
 }
 
 .markdown li {
