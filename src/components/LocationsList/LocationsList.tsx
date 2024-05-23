@@ -1,8 +1,10 @@
+'use client'
 import React from "react";
 import { locationsList } from "@/constants/locationsList/locationsList";
 import Link from "next/link";
 
 export const LocationsList: React.FC = () => {
+
 	return (
 		<section className="container relative z-30 inside-mb">
 			<h3 className="text-title text-white inside-mb">Washington</h3>
@@ -20,7 +22,9 @@ export const LocationsList: React.FC = () => {
 					))}
 				</ul>
 			</div>
-			<h3 className="text-title text-white inside-mb">British Columbia</h3>
+			<h3 className="text-title text-white inside-mb">
+				British Columbia
+			</h3>
 			<div>
 				<ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-8 gap-x-4 text-left">
 					{locationsList.bc.map((location) => (
@@ -35,7 +39,7 @@ export const LocationsList: React.FC = () => {
 					))}
 				</ul>
 			</div>
-			
+
 		</section>
 	);
 };

@@ -1,3 +1,4 @@
+
 /* import { BackgroundPictures } from "@/components/BackgroundPictures/BackgroundPictures"; */
 import { Banner } from "@/components/Banner/Banner";
 import { ContactUs } from "@/components/ContactUs/ContactUs";
@@ -23,6 +24,7 @@ import { ImageTextSection } from "@/components/ImageTextSection/ImageTextSection
 import { LocationsList } from "@/components/LocationsList/LocationsList";
 import { FormMain } from "@/components/FormMain/FormMain";
 import type { Metadata } from "next";
+import TagEmbedWidget from "@/components/TikTok/TikTok";
 
 export const metadata: Metadata = {
 	title: "Renova Remodeling Experts | Kitchens, Baths, More!",
@@ -37,11 +39,11 @@ export default function Home(): JSX.Element {
 			<div className="inside-mb">
 				<Slider id="hero" />
 			</div>
-
+			<TagEmbedWidget />
 			<CatalogBanner />
 			<ImageTextSection {...mainPageContent.imageTextSection} />
 			<Perks {...mainPageContent} />
-
+			<TagEmbedWidget />
 			<OurServices />
 			<MainAbout {...mainPageContent.aboutSection} />
 			<HowWeWork {...mainPageContent} />

@@ -36,7 +36,7 @@
     ".next/types/**/*.ts",
     "src/app/[services]/[[...location]]/services",
     "src/app/[services]/components"
-  ],
+, "src/components/YoutubeShorts/YoutubeShorts.tsx"  ],
   "exclude": [
     "node_modules"
   ]
