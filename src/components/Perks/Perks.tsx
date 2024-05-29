@@ -26,9 +26,9 @@ export const Perks: React.FC<Props> = ({ perks }: Props): JSX.Element => {
 							<div className="mb-5 flex items-center">
 								<Image src={contact} alt="" />
 								<div className="flex relative left-[-9px]  justify-between ">
-									<p className="text-white font-light text-title ">
+									<h3 className="text-white font-light text-title ">
 										{item.heading}
-									</p>
+									</h3>
 								</div>
 							</div>
 							<p className="white-paragraph text-base">

@@ -12,7 +12,7 @@ import "swiper/css/scrollbar";
 import right_arrow from "/public/logo/hero_right_arrow.svg";
 import left_arrow from "/public/logo/thero_left_arrow.svg";
 
-import { type FC } from "react";
+import React, { type FC } from "react";
 import { swiperConfig } from "@/constants/swiperConfig/swiperConfig";
 import type { SwiperContent } from "@/types/swiper/swiper";
 
@@ -29,7 +29,7 @@ export const Slider: FC<SwiperProps> = ({ id }) => {
 	const SelectedSlide = swiperSlide;
 
 	return (
-		<section className="container">
+		<section className="container inside-mb">
 			<Swiper pagination={true} {...settings}>
 				{content.map((slide: SwiperContent) => (
 					<SwiperSlide className="pb-[45px]" key={slide.id}>

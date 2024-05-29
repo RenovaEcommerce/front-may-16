@@ -36,32 +36,29 @@ export default function Home(): JSX.Element {
 	return (
 		<main>
 			{/*  <BackgroundPictures pageType={backgroundPicturesMain} /> */}
-			<div className="inside-mb">
-				<Slider id="hero" />
-			</div>
-			<TagEmbedWidget />
+
+			<Slider id="hero" />
 			<CatalogBanner />
-			<ImageTextSection {...mainPageContent.imageTextSection} />
-			<Perks {...mainPageContent} />
+			<TagEmbedWidget />
+			<ImageTextSection {...mainPageContent.imageTextSection} {...mainPageContent} />
 			<TagEmbedWidget />
 			<OurServices />
 			<MainAbout {...mainPageContent.aboutSection} />
 			<HowWeWork {...mainPageContent} />
-			<MyMarkdown markdown={mainPageContent.markdown1} />
 			<TopProducts />
 			<CatalogBanner />
 			<Banner />
+
 			<BathroomRemodelCalculator />
-			<Manufacturers />
+			<Manufacturers {...mainPageContent}/>
+
+
 			<MainSlider />
-			<MyMarkdown markdown={mainPageContent.markdown2} />
-			<MainWhySection {...mainPageContent.whySection} />
-			<Reviews />
-			<ContactUs />
-			<FAQ {...mainPageContent} />
-			<MyMarkdown markdown={mainPageContent.markdown3} />
+			<MainWhySection {...mainPageContent} {...mainPageContent.whySection} markdown3={mainPageContent.markdown3} />
+
 			<ServiceAreas />
 			<LocationsList />
+
 		</main>
 	);
 }

@@ -19,7 +19,7 @@ export const ServicesCard: React.FC<Props> = ({
 }) => {
 	return (
 		<Link href={url}>
-			<div
+			<article
 				className="relative justify-between min-w-[300px] min-h-[490px] max-w-[300px] max-h-[490px]
         lg:min-w-[350px] lg:min-h-[516px] lg:max-w-[350px] lg:max-h-[516px]  border-solid border-[1px] hover:[border-black] border-white rounded-3xl font-light "
 				key={heading}
@@ -41,7 +41,7 @@ export const ServicesCard: React.FC<Props> = ({
 					{paragraph}
 				</p>
 				<p className="px-2">{price}</p>
-			</div>
+			</article>
 		</Link>
 	);
 };

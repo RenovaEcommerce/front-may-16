@@ -7,7 +7,7 @@ export const ServiceAreas = (): JSX.Element => {
 	const selectedCategory = bottomButtons.countertops;
 
 	return (
-		<section className="container max-md:px-2 mb-[100px] max-md:mb-[50px] relative z-40">
+		<section className="container max-md:px-2 component-mb relative z-40">
 			{selectedCategory?.material && (
 				<>
 					<h3 className="title-white text-title-large">MATERIAL</h3>
@@ -46,7 +46,7 @@ export const ServiceAreas = (): JSX.Element => {
 			{selectedCategory?.brands && (
 				<>
 					<h3 className="title-white text-title-large">BRANDS</h3>
-					<ul className="flex gap-5 mt-10 mb-10 overflow-x-auto no-scrollbar">
+					<ul className="flex gap-5 mt-10 overflow-x-auto no-scrollbar">
 						{selectedCategory &&
 							selectedCategory.brands.map((link: any) => (
 								<li key={link.url}>

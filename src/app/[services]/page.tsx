@@ -64,7 +64,6 @@ const Services: React.FC<{ params: { services: string } }> = async ({
 	const servicesPageData = servicesData[0];
 
 	let blogData;
-	/* blogData = await getBlogData(servicesPageData.category); */
 
 	return (
 		<main>

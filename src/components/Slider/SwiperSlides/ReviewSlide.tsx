@@ -31,7 +31,7 @@ export const ReviewSlide: React.FC<Props> = ({
 				<p className="font-normal">
 					{service} | {date}
 				</p>
-				<p>{title}</p>
+				<h4>{title}</h4>
 				<div className="flex gap-2">
 					<Image src={star} height={24} width={24} alt="" />
 					<Image src={star} height={24} width={24} alt="" />

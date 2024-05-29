@@ -41,7 +41,7 @@ export const Footer: React.FC = () => {
 					</li>
 				</ul>
 				<div className="max-sm:hidden flex max-md:gap-x-[58px] max-md:mt-5 md:gap-[30px] lg:gap-[90px] xl:gap-[157px]">
-					<div>
+					<nav>
 						<h3 className="relative left-4 text-title text-white mb-[20px]">
 							PRODUCTS
 						</h3>
@@ -55,8 +55,8 @@ export const Footer: React.FC = () => {
 								</li>
 							))}
 						</ul>
-					</div>
-					<div>
+					</nav>
+					<nav>
 						<h3 className="relative left-4 text-title text-white mb-[20px]">
 							SERVICES
 						</h3>
@@ -72,9 +72,9 @@ export const Footer: React.FC = () => {
 								</li>
 							))}
 						</ul>
-					</div>
+					</nav>
 
-					<div className="max-xl:hidden ">
+					<nav className="max-xl:hidden ">
 						<p className="text-title text-white mb-[20px]">MENU</p>
 						<ul>
 							<li className="mb-[15px] ">
@@ -90,7 +90,7 @@ export const Footer: React.FC = () => {
 								<Link href="/">Blog</Link>{" "}
 							</li>
 						</ul>
-					</div>
+					</nav>
 				</div>
 			</div>
 			<div className="flex max-sm:flex-col justify-center items-center gap-2.5 pb-[60px]">

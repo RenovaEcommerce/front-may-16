@@ -1,5 +1,6 @@
 import Image from "next/image";
 import about_picture from "/public/contentImages/servicesPage/countertops/countertop_services.jpg";
+import { Perks } from "../Perks/Perks";
 
 interface ImageTextSectionProps {
 	phrase: string;
@@ -18,7 +19,8 @@ export const ImageTextSection: React.FC<ImageTextSectionProps> = ({
 	h1,
 	paragraph1,
 	paragraph2,
-	price
+	price,
+	perks
 }) => {
 	return (
 		<section className="container">
@@ -43,9 +45,9 @@ export const ImageTextSection: React.FC<ImageTextSectionProps> = ({
 				</div>
 				<div className="flex">
 					<div className="mt-[44px]">
-						<p className="mb-8 text-main-yellow items-center">
+						<h3 className="mb-8 text-main-yellow items-center">
 							{price}
-						</p>
+						</h3>
 						<p className="text-main-gray ml-auto mb-10">
 							{paragraph1}
 						</p>
@@ -69,25 +71,24 @@ export const ImageTextSection: React.FC<ImageTextSectionProps> = ({
 				</div>
 				<div className="flex justify-between items-center gap-10">
 					<div className="lg:max-w-[826px] mt-[44px]  md:items-end">
-						<p className="mb-8 text-main-yellow items-center">
+						<h3 className="mb-8 text-main-yellow items-center">
 							{price}
-						</p>
+						</h3>
 						<p className="text-main-gray  mb-10">{paragraph1}</p>
 						<p className="text-main-gray ">{paragraph2}</p>
 						<div className="relative lg:hidden mt-[40px] sm:mx-auto sm:w-full"></div>
 					</div>
 
-					<div className="relative">
-						<Image
-							src={image}
-							height={350}
-							width={650}
-							alt={imageAlt}
-							className=" rounded-l-xl max-xl:hidden" // Убедитесь, что изображение растягивается на всю ширину
-						/>
-					</div>
+					<Image
+						src={image}
+						height={350}
+						width={650}
+						alt={imageAlt}
+						className="relative rounded-l-xl max-xl:hidden" // Убедитесь, что изображение растягивается на всю ширину
+					/>
 				</div>
 			</div>
+			<Perks perks={perks} />
 		</section>
 	);
 };

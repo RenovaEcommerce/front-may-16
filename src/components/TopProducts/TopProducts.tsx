@@ -53,9 +53,9 @@ export const TopProducts: React.FC = (): JSX.Element => {
 		<section className="w-full max-w-[1440px] px-[10px] mx-auto z-10 relative text-main-gray mb-[100px] max-xl:mb-[50px]">
 			<div className="flex flex-col items-center md:flex-row">
 				<div className="md:text-center md:pr-8 w-full md:w-[35%] xl:w-[28%] ">
-					<p className="custom-heading max-lg:text-[40px] mb-5 sm:mb-10 leading-tight first-letter:text-main-yellow">
+					<h2 className="custom-heading max-lg:text-[40px] mb-5 sm:mb-10 leading-tight first-letter:text-main-yellow">
 						Top<br></br> Products
-					</p>
+					</h2>
 					<ul className="flex inside-mb overflow-x-auto no-scrollbar overflow-y-hidden md:flex-col items-center">
 						{topProducts.map((topProduct) => (
 							<li

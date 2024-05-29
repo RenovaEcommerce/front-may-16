@@ -40,7 +40,7 @@ export const MainAbout: React.FC<Props> = ({
 						className=" mt-[40px] md:mt-[26px] w-max right-0 hover:bg-white hover:text-black transition duration-100"
 						variant="primary"
 					>
-						<Link href="/about">More</Link>
+						<Link title="About page" href="/about">More</Link>
 					</Button>
 				</div>
 			</div>

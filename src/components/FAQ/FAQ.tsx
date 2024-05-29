@@ -30,14 +30,14 @@ export const FAQ: React.FC<FaqProps> = ({ faqItems }): JSX.Element => {
 
 	return (
 		<section className="container component-mb  relative z-10">
-			<h2 className="w-max mx-auto  custom-heading first-letter:text-main-yellow">
+			<h3 className="w-max mx-auto  custom-heading first-letter:text-main-yellow">
 				FAQ
-			</h2>
+			</h3>
 
 			<ul className="w-full md:w-[650px] mx-auto">
 				{faqItems.map((item: FAQItem, index: number) => (
 					<li key={`q${index + 1}`} id={`q${index + 1}`}>
-						<div>
+
 							<div
 								onClick={() => handleItemClick(index)}
 								className="flex items-center mb-[32px] text-main-gray font-medium text-title hover:cursor-pointer hover:shadow-lg"
@@ -48,7 +48,7 @@ export const FAQ: React.FC<FaqProps> = ({ faqItems }): JSX.Element => {
 									width={25}
 									alt=""
 								/>
-								<h3 className="ml-[10px]">{item.question}</h3>
+								<h4 className="ml-[10px]">{item.question}</h4>
 							</div>
 
 							<p
@@ -58,7 +58,7 @@ export const FAQ: React.FC<FaqProps> = ({ faqItems }): JSX.Element => {
 							>
 								{item.answer}
 							</p>
-						</div>
+
 					</li>
 				))}
 			</ul>

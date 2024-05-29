@@ -4,16 +4,17 @@ import { manufacturersLogos } from "@/constants/manufacturersLogos/manufacturers
 import { topProducts } from "@/constants/topProducts/topProducts";
 import Image from "next/image";
 import { useState } from "react";
+import { MyMarkdown } from "../MyMarkdown/MyMarkdown";
 
-export const Manufacturers: React.FC = () => {
+export const Manufacturers: React.FC<String> = ({markdown2}   ) => {
 	const [clickedService, setClickedService] = useState("tile");
 
 	return (
 		<section className="container component-mb  relative z-20">
-			<div className="mb-10  text-center">
-				<h3 className="mb-10 custom-heading  first-letter:text-main-yellow">
+			<div className="mb-10  text-center ">
+				<h2 className="mb-10 custom-heading  first-letter:text-main-yellow">
 					Manufacturers
-				</h3>
+				</h2>
 				<p className="text-main-gray">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit.
 					Vel, voluptatum?Lorem ipsum dolor sit amet.
@@ -41,7 +42,7 @@ export const Manufacturers: React.FC = () => {
 						))}
 					</ul>
 				</div>
-				<div className="w-full overflow-x-auto md:w-[80%] grid grid-cols-3 gap-2 lg:grid-cols-4 xl:grid-cols-5 mx-auto gap-x-4 items-center ">
+				<div className="component-mb w-full overflow-x-auto md:w-[80%] grid grid-cols-3 gap-2 lg:grid-cols-4 xl:grid-cols-5 mx-auto gap-x-4 items-center ">
 					{manufacturersLogos[
 						clickedService as keyof typeof manufacturersLogos
 					].map((logo, index) => (
@@ -56,6 +57,9 @@ export const Manufacturers: React.FC = () => {
 					))}
 				</div>
 			</div>
+
+			<MyMarkdown markdown={markdown2} />
+
 		</section>
 	);
 };

@@ -84,7 +84,7 @@ export const Header: React.FC = (): JSX.Element => {
 	return (
 		<header className="container sm:mb-10">
 			<Geo />
-			<div className="flex pb-5 justify-between items-end  border-b-[1px] border-solid border-black">
+			<section className="flex pb-5 justify-between items-end  border-b-[1px] border-solid border-black">
 				<ul className="flex gap-5">
 					{socialIcons?.map(({ icon, href, id }: any) => (
 						<li key={id}>
@@ -157,10 +157,10 @@ export const Header: React.FC = (): JSX.Element => {
 						email@example.com
 					</a>
 				</div>
-			</div>
+			</section>
 
-			<div className={classes.header}>
-				<Link href="/">
+			<nav className={classes.header}>
+				<Link href="/" title="Homepage">
 					<Image
 						src={header_logo}
 						height={37}
@@ -240,7 +240,7 @@ export const Header: React.FC = (): JSX.Element => {
 						/>
 					</div>
 				</div>
-			</div>
+			</nav>
 			<div
 				className={` z-20  ${
 					isOpen || isDropdownHovered ? " block" : "hidden"

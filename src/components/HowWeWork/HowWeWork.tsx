@@ -3,6 +3,7 @@ import Image from "next/image";
 import contact from "/public/logo/contact.svg";
 
 import Link from "next/link";
+import { MyMarkdown } from "../MyMarkdown/MyMarkdown";
 
 interface DescriptionObject {
 	p1: string;
@@ -19,17 +20,18 @@ interface HowWeWorkObj {
 
 type Props = {
 	howWeWork: HowWeWorkObj[];
+	markdown1: string
 };
 
-const HowWeWork: React.FC<Props> = ({ howWeWork }) => (
-	<section className="container component-mb ">
+const HowWeWork: React.FC<Props> = ({ howWeWork, markdown1 }) => (
+	<section className="container ">
 		<h2 className="inside-mb w-max mx-auto custom-heading first-letter:text-main-yellow">
 			How we work
 		</h2>
 
-		<ul className="flex overflow-x-auto slider-gap  no-scrollbar ">
+		<div className="flex overflow-x-auto slider-gap  no-scrollbar component-mb ">
 			{howWeWork.map((step: HowWeWorkObj) => (
-				<li
+				<div
 					key={step.id}
 					className="min-w-[350px] max-w-[350px]
 					lg:min-w-[450px] lg:max-w-[450px] min-h-[250px]  border-solid border-[1px] hover:border-black border-white small-button "
@@ -38,9 +40,9 @@ const HowWeWork: React.FC<Props> = ({ howWeWork }) => (
 						<div className="mb-5 flex items-center">
 							<Image src={contact} alt="" />
 							<div className="flex relative left-[-9px]  justify-between ">
-								<p className="text-white font-light text-title ">
+								<h4 className="text-white font-light text-title ">
 									{step?.title}
-								</p>
+								</h4>
 							</div>
 						</div>
 
@@ -66,9 +68,10 @@ const HowWeWork: React.FC<Props> = ({ howWeWork }) => (
 							</li>
 						</ul>
 					</div>
-				</li>
+				</div>
 			))}
-		</ul>
+		</div>
+		<MyMarkdown markdown={markdown1}/>
 	</section>
 );
 
