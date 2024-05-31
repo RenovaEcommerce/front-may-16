@@ -3,7 +3,7 @@ import circle from "/public/logo/why_section.svg";
 import contact from "/public/logo/contact.svg";
 import { Reviews } from "../Reviews/Reviews";
 import { FAQ } from "../FAQ/FAQ";
-import { MyMarkdown } from "../MyMarkdown/MyMarkdown";
+import ReactMarkdown from "react-markdown"
 
 type PropsObj = {
 	id: number;
@@ -46,7 +46,7 @@ export const MainWhySection: React.FC<Props> = ({ whyArray, whyGrid, markdown3, 
 				))}
 			</ul>
 
-			<ul className="w-max md:mx-auto justify-center grid grid-cols-1 md:grid-cols-2 grid-rows-2 text-title text-left gap-[30px] md:gap-10 component-mb text-white">
+			<ul className="w-max md:mx-auto justify-center grid grid-cols-1 md:grid-cols-2 grid-rows-2 text-title text-left gap-[30px] md:gap-10 inside-mb text-white">
 				{whyGrid.map((item, index) => (
 					<li key={index} className="flex items-center gap-[10px]">
 						<Image src={circle} alt="" />
@@ -54,7 +54,11 @@ export const MainWhySection: React.FC<Props> = ({ whyArray, whyGrid, markdown3, 
 					</li>
 				))}
 			</ul>
-			<MyMarkdown markdown={markdown3} />
+
+			<ReactMarkdown className="markdown-b markdown">{markdown3}</ReactMarkdown>
+
+
+
 
 
 			<Reviews />

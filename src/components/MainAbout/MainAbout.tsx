@@ -35,7 +35,7 @@ export const MainAbout: React.FC<Props> = ({
 				/>
 			</div>
 			<div className="flex flex-col w-full md:w-[50%] max-md:mt-[40px] text-main-gray">
-				<ReactMarkdown className="markdown-b markdown">
+				<ReactMarkdown className="inside-mb markdown">
 					{markdown}
 				</ReactMarkdown>
 				<Button

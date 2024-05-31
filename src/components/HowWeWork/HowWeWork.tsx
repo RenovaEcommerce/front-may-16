@@ -3,7 +3,7 @@ import Image from "next/image";
 import contact from "/public/logo/contact.svg";
 
 import Link from "next/link";
-import { MyMarkdown } from "../MyMarkdown/MyMarkdown";
+import ReactMarkdown from "react-markdown";
 
 interface DescriptionObject {
 	p1: string;
@@ -20,16 +20,16 @@ interface HowWeWorkObj {
 
 type Props = {
 	howWeWork: HowWeWorkObj[];
-	markdown1: string
+	markdown1: string;
 };
 
 const HowWeWork: React.FC<Props> = ({ howWeWork, markdown1 }) => (
-	<section className="container ">
+	<section className="container component-mb">
 		<h2 className="inside-mb w-max mx-auto custom-heading first-letter:text-main-yellow">
 			How we work
 		</h2>
 
-		<div className="flex overflow-x-auto slider-gap  no-scrollbar component-mb ">
+		<div className="flex overflow-x-auto slider-gap  no-scrollbar inside-mb ">
 			{howWeWork.map((step: HowWeWorkObj) => (
 				<div
 					key={step.id}
@@ -71,7 +71,7 @@ const HowWeWork: React.FC<Props> = ({ howWeWork, markdown1 }) => (
 				</div>
 			))}
 		</div>
-		<MyMarkdown markdown={markdown1}/>
+		<ReactMarkdown className="markdown">{markdown1}</ReactMarkdown>
 	</section>
 );
 

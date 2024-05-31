@@ -4,7 +4,7 @@ import { manufacturersLogos } from "@/constants/manufacturersLogos/manufacturers
 import { topProducts } from "@/constants/topProducts/topProducts";
 import Image from "next/image";
 import { useState } from "react";
-import { MyMarkdown } from "../MyMarkdown/MyMarkdown";
+import ReactMarkdown from "react-markdown";
 
 export const Manufacturers: React.FC<String> = ({markdown2}   ) => {
 	const [clickedService, setClickedService] = useState("tile");
@@ -17,7 +17,7 @@ export const Manufacturers: React.FC<String> = ({markdown2}   ) => {
 				</h2>
 				<p className="text-main-gray">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Vel, voluptatum?Lorem ipsum dolor sit amet.
+					Vel, voluptatum?Lorem ipsum dolor sit amet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos non nemo omnis ipsa corrupti minus a autem rem voluptas alias.
 				</p>
 			</div>
 
@@ -42,7 +42,7 @@ export const Manufacturers: React.FC<String> = ({markdown2}   ) => {
 						))}
 					</ul>
 				</div>
-				<div className="component-mb w-full overflow-x-auto md:w-[80%] grid grid-cols-3 gap-2 lg:grid-cols-4 xl:grid-cols-5 mx-auto gap-x-4 items-center ">
+				<div className="inside-mb w-full overflow-x-auto md:w-[80%] grid grid-cols-3 gap-2 lg:grid-cols-4 xl:grid-cols-5 mx-auto gap-x-4 items-center ">
 					{manufacturersLogos[
 						clickedService as keyof typeof manufacturersLogos
 					].map((logo, index) => (
@@ -57,8 +57,8 @@ export const Manufacturers: React.FC<String> = ({markdown2}   ) => {
 					))}
 				</div>
 			</div>
+			<ReactMarkdown className="markdown">{markdown2}</ReactMarkdown>
 
-			<MyMarkdown markdown={markdown2} />
 
 		</section>
 	);
