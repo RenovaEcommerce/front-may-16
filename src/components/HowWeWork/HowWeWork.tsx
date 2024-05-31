@@ -23,14 +23,15 @@ type Props = {
 	markdown1: string;
 };
 
-const HowWeWork: React.FC<Props> = ({ howWeWork, markdown1 }) => (
+const HowWeWork: React.FC<Props> = ({ array, markdown1 }) => (
 	<section className="container component-mb">
+		
 		<h2 className="inside-mb w-max mx-auto custom-heading first-letter:text-main-yellow">
 			How we work
 		</h2>
 
 		<div className="flex overflow-x-auto slider-gap  no-scrollbar inside-mb ">
-			{howWeWork.map((step: HowWeWorkObj) => (
+			{array.map((step: HowWeWorkObj) => (
 				<div
 					key={step.id}
 					className="min-w-[350px] max-w-[350px]
@@ -71,7 +72,9 @@ const HowWeWork: React.FC<Props> = ({ howWeWork, markdown1 }) => (
 				</div>
 			))}
 		</div>
+
 		<ReactMarkdown className="markdown">{markdown1}</ReactMarkdown>
+
 	</section>
 );
 

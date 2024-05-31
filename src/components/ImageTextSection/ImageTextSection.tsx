@@ -88,7 +88,7 @@ export const ImageTextSection: React.FC<ImageTextSectionProps> = ({
 					/>
 				</div>
 			</div>
-			<Perks perks={perks} />
+			{/* <Perks perks={perks} /> */}
 		</section>
 	);
 };

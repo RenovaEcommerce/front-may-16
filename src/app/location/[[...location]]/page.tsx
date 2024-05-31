@@ -79,19 +79,18 @@ export default async function Page({
 			{/* <BackgroundPictures pageType={backgroundPicturesMain} /> */}
 			<Slider id="hero" />
 			<CatalogBanner />
-			<ImageTextSection {...props.imageTextSection} />
+			{/* <ImageTextSection {...props.imageTextSection} /> */}
 			<ServicesAbout {...props.about} />
 			<OurServices />
-			<HowWeWork {...props} />
+			<HowWeWork {...props.howWeWork} />
 			<MyMarkdown markdown={props.markdown1} />
 			<TopProducts />
 			<Banner />
 			<MainAbout {...props.aboutSection} />
-			<Manufacturers />
+			<Manufacturers {...props.howWeWork}/>
 			<MainSlider />
-			<MainWhySection {...props.whySection} />
-			<Reviews />
-			<FAQ {...props} />
+			<MainWhySection {...props.whySection} {...props} />
+
 			<ContactUs />
 			<MyMarkdown markdown={props.markdown2} />
 			<OurPartners />

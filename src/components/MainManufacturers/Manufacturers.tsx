@@ -6,7 +6,7 @@ import Image from "next/image";
 import { useState } from "react";
 import ReactMarkdown from "react-markdown";
 
-export const Manufacturers: React.FC<String> = ({markdown2}   ) => {
+export const Manufacturers: React.FC<String> = ({markdownmanufacturers}   ) => {
 	const [clickedService, setClickedService] = useState("tile");
 
 	return (
@@ -42,6 +42,8 @@ export const Manufacturers: React.FC<String> = ({markdown2}   ) => {
 						))}
 					</ul>
 				</div>
+
+
 				<div className="inside-mb w-full overflow-x-auto md:w-[80%] grid grid-cols-3 gap-2 lg:grid-cols-4 xl:grid-cols-5 mx-auto gap-x-4 items-center ">
 					{manufacturersLogos[
 						clickedService as keyof typeof manufacturersLogos
@@ -57,8 +59,8 @@ export const Manufacturers: React.FC<String> = ({markdown2}   ) => {
 					))}
 				</div>
 			</div>
-			<ReactMarkdown className="markdown">{markdown2}</ReactMarkdown>
 
+			<ReactMarkdown className="markdown">{markdownmanufacturers}</ReactMarkdown>
 
 		</section>
 	);

@@ -62,7 +62,7 @@ export const MainWhySection: React.FC<Props> = ({ whyArray, whyGrid, markdown3, 
 
 
 			<Reviews />
-			<FAQ faqItems={faqItems} />
+			{/* <FAQ faqItems={faqItems} /> */}
 
 
 		</section>

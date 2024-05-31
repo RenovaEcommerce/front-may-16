@@ -1,4 +1,3 @@
-
 /* import { BackgroundPictures } from "@/components/BackgroundPictures/BackgroundPictures"; */
 import { Banner } from "@/components/Banner/Banner";
 import { ContactUs } from "@/components/ContactUs/ContactUs";
@@ -25,6 +24,7 @@ import { LocationsList } from "@/components/LocationsList/LocationsList";
 import { FormMain } from "@/components/FormMain/FormMain";
 import type { Metadata } from "next";
 import TagEmbedWidget from "@/components/TikTok/TikTok";
+import ServicesAbout from "./[services]/components/ServicesAbout";
 
 export const metadata: Metadata = {
 	title: "Renova Remodeling Experts | Kitchens, Baths, More!",
@@ -36,28 +36,27 @@ export default function Home(): JSX.Element {
 	return (
 		<main>
 			{/*  <BackgroundPictures pageType={backgroundPicturesMain} /> */}
-
 			<Slider id="hero" />
 			<CatalogBanner />
-			
-			<ImageTextSection {...mainPageContent.imageTextSection} {...mainPageContent} />
+			{/* 			<ImageTextSection {...mainPageContent.imageTextSection} {...mainPageContent} />
+			 */}
+			<ServicesAbout {...mainPageContent.about} />
 			<OurServices />
 			<MainAbout {...mainPageContent.aboutSection} />
-			<HowWeWork {...mainPageContent} />
+			<HowWeWork {...mainPageContent.howWeWork} />
 			<TopProducts />
 			<CatalogBanner />
 			<Banner />
-
 			<BathroomRemodelCalculator />
-			<Manufacturers {...mainPageContent}/>
-
-
+			<Manufacturers {...mainPageContent} />
 			<MainSlider />
-			<MainWhySection {...mainPageContent} {...mainPageContent.whySection} markdown3={mainPageContent.markdown3} />
-
+			<MainWhySection
+				{...mainPageContent}
+				{...mainPageContent.whySection}
+				markdown3={mainPageContent.markdown3}
+			/>
 			<ServiceAreas />
 			<LocationsList />
-
 		</main>
 	);
 }

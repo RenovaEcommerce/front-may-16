@@ -10,6 +10,55 @@ export const mainPageContent = {
 			"Looking to add a walk-in shower, or perhaps you're interested in underfloor heating for those cold mornings? Our custom bathrooms remodeling in Victoria BC incorporates modern amenities like these and more. We also specialize in kitchen and bathroom remodeling in Victoria, ensuring a cohesive look throughout your home.",
 		price: "Remodels Start at $150/sqft",
 	},
+	about: {
+		priceLine1: "Price starts at $8,000",
+		priceLine2: "Average cost is $10,000",
+		phrase1:
+			"A home is made of walls and beams; a home is built with love and dreams.",
+		phrase2: "Quality roofing, lasting protection.",
+		image1: "https://res.cloudinary.com/dzojhepyl/image/upload/t_1heoudqy3gefuoyqegfuy/v1716164156/imgonline-com-ua-dexifJhGLnSL5A9GF_e19r6n.jpg",
+		image1alt: "Roof removal process",
+		image2: "https://res.cloudinary.com/dzojhepyl/image/upload/t_ABOUT%20about%20section%20template/v1716164155/imgonline-com-ua-dexifhfHRm0h3eaIb_w0xupl.jpg",
+		image2alt: "Roofing in the process and skylight installation",
+		sectionH2: "Why Choose RENOVA",
+		sectionP1:
+			"RENOVA's got you covered when it comes to top-notch roofing services. Our crew knows their stuff and only uses the highest quality materials to make sure your roof lasts a lifetime. Customer satisfaction is our top priority, so you can trust us to keep your home safe and sound.",
+		sectionP2:
+			"We do all kinds of roofing jobs, from fixing a small leak to putting on a whole new roof. When you choose RENOVA, you're getting a roofing buddy who's all about doing a top-notch job and paying close attention to the little things.",
+		section2H2: "Our Roofing Process",
+		section2P1:
+			"We begin by meeting with you to discuss your roofing requirements. After that, we carefully examine your roof to evaluate its current state. Following our assessment, we present a comprehensive proposal outlining our recommendations for materials, estimated costs, and a schedule for the project's completion.",
+		section2P2:
+			"During the project, our team maintains high levels of skill and provides frequent progress updates. We conclude with a thorough inspection to guarantee your satisfaction.",
+		perks: [
+			{
+				heading: "Expert Craftsmanship",
+				paragraph:
+					"Our skilled roofers ensure top-notch installation and repair services.",
+			},
+			{
+				heading: "Quality Materials",
+				paragraph:
+					"We use premium materials for durability and long-lasting protection.",
+			},
+			{
+				heading: "Comprehensive Services",
+				paragraph:
+					"From inspection to installation, we cover all aspects of roofing.",
+			},
+			{
+				heading: "Customer Satisfaction",
+				paragraph:
+					"We prioritize your satisfaction with excellent service and communication.",
+			},
+			{
+				heading: "Competitive Pricing",
+				paragraph:
+					"Our services are priced competitively without compromising on quality.",
+			},
+		],
+	},
+
 	perks: [
 		{
 			heading: "Comprehensive Remodeling Solutions",
@@ -40,7 +89,7 @@ export const mainPageContent = {
 	aboutSection: {
 		h2: "Custom Bathrooms and Beyond: What We Offer",
 		markdown:
-			"## Leading Bathroom Remodeling Services in Victoria\n\nReady to start your bathroom renovation in Victoria? From luxurious walk-in showers to elegant bathroom vanities, our team ensures excellence in every project. Our approach combines innovative design with functionality, creating spaces that reflect your lifestyle and preferences.\n\n## Tailored to Your Needs\n\nWe understand that a good idea for one might not work for another. That's why our services are customized to meet the unique needs and preferences of each client, ensuring your new bathroom is a perfect fit for your home.\n\n## A Trusted Partner in Your Remodel Journey\n\nChoosing us means partnering with a team that values your input and satisfaction above all. We're dedicated to delivering not just a remodeled bathroom but a transformation of your living space. Let's create something exceptional together.",
+			"Leading Bathroom Remodeling Services in Victoria\n\nReady to start your bathroom renovation in Victoria? From luxurious walk-in showers to elegant bathroom vanities, our team ensures excellence in every project. Our approach combines innovative design with functionality, creating spaces that reflect your lifestyle and preferences.\n\n## Tailored to Your Needs\n\nWe understand that a good idea for one might not work for another. That's why our services are customized to meet the unique needs and preferences of each client, ensuring your new bathroom is a perfect fit for your home.\n\n## A Trusted Partner in Your Remodel Journey\n\nChoosing us means partnering with a team that values your input and satisfaction above all. We're dedicated to delivering not just a remodeled bathroom but a transformation of your living space. Let's create something exceptional together.",
 		image: "https://res.cloudinary.com/dzojhepyl/image/upload/v1715880285/landing/CC0C6DD3-9416-4D91-9942-AF8AA3B4263F_vhgm51.jpg",
 		imageAlt: "remodeled porch",
 	},
@@ -49,188 +98,111 @@ export const mainPageContent = {
 		"Looking to add a walk-in shower, or perhaps you're interested in underfloor heating for those cold mornings? Our custom bathrooms remodeling in Victoria BC incorporates modern amenities like these and more. We also specialize in kitchen and bathroom remodeling in Victoria, ensuring a cohesive look throughout your home.",
 	section2P2:
 		"Our project management approach means we handle all aspects of your bathroom renovation remodel, from securing high-quality natural stone tiles for your bathroom walls to planning a bathroom that maximizes natural light. Our dedication to customer service and years of experience make us the preferred Victoria bathroom remodeler.",
-	howWeWork: [
-		{
-			id: 1,
-			title: "Initial Consultation",
-			description: {
-				p1: "Discuss project scope, budget, and timeline.",
-				p2: "Assess the existing space and take measurements.",
-				p3: "Identify client needs, preferences, and goals.",
+	howWeWork: {
+		array: [
+			{
+				id: 1,
+				title: "Initial Consultation",
+				description: {
+					p1: "Discuss project scope, budget, and timeline.",
+					p2: "Assess the existing space and take measurements.",
+					p3: "Identify client needs, preferences, and goals.",
+				},
+				imagePath: "",
 			},
-			imagePath: "path/to/initial_consultation_image.jpg",
-		},
-		{
-			id: 2,
-			title: "Design Phase",
-			description: {
-				p1: "Develop initial design concepts and layouts.",
-				p2: "Create detailed architectural and engineering plans.",
-				p3: "Present design options to the client for feedback and approval.",
+			{
+				id: 2,
+				title: "Design Phase",
+				description: {
+					p1: "Develop initial design concepts and layouts.",
+					p2: "Create detailed architectural and engineering plans.",
+					p3: "Present design options to the client for feedback and approval.",
+				},
+				imagePath: "",
 			},
-			imagePath: "path/to/design_phase_image.jpg",
-		},
-		{
-			id: 3,
-			title: "Budgeting and Cost Estimation",
-			description: {
-				p1: "Prepare a detailed cost estimate for the project.",
-				p2: "Review and finalize the budget with the client.",
-				p3: "Adjust the design or scope if needed to fit the budget.",
+			{
+				id: 3,
+				title: "Budgeting and Cost Estimation",
+				description: {
+					p1: "Prepare a detailed cost estimate for the project.",
+					p2: "Review and finalize the budget with the client.",
+					p3: "Adjust the design or scope if needed to fit the budget.",
+				},
+				imagePath: "",
 			},
-			imagePath: "path/to/budgeting_cost_estimation_image.jpg",
-		},
-		{
-			id: 4,
-			title: "Permits and Approvals",
-			description: {
-				p1: "Submit necessary plans and applications to local authorities.",
-				p2: "Obtain building permits and any other required approvals.",
-				p3: "Address any revisions or additional requirements from authorities.",
+			{
+				id: 4,
+				title: "Permits and Approvals",
+				description: {
+					p1: "Submit necessary plans and applications to local authorities.",
+					p2: "Obtain building permits and any other required approvals.",
+					p3: "Address any revisions or additional requirements from authorities.",
+				},
+				imagePath: "",
 			},
-			imagePath: "path/to/permits_approvals_image.jpg",
-		},
-		{
-			id: 5,
-			title: "Material Selection",
-			description: {
-				p1: "Choose materials, fixtures, and finishes (e.g., flooring, cabinets, countertops).",
-				p2: "Source and order all necessary materials.",
-				p3: "Coordinate delivery schedules.",
+			{
+				id: 5,
+				title: "Material Selection",
+				description: {
+					p1: "Choose materials, fixtures, and finishes (e.g., flooring, cabinets, countertops).",
+					p2: "Source and order all necessary materials.",
+					p3: "Coordinate delivery schedules.",
+				},
+				imagePath: "",
 			},
-			imagePath: "path/to/material_selection_image.jpg",
-		},
-		{
-			id: 6,
-			title: "Scheduling and Planning",
-			description: {
-				p1: "Develop a detailed project timeline and schedule.",
-				p2: "Coordinate with subcontractors and suppliers.",
-				p3: "Set milestones and deadlines for each phase of the project.",
+			{
+				id: 6,
+				title: "Scheduling and Planning",
+				description: {
+					p1: "Develop a detailed project timeline and schedule.",
+					p2: "Coordinate with subcontractors and suppliers.",
+					p3: "Set milestones and deadlines for each phase of the project.",
+				},
 			},
-			imagePath: "path/to/scheduling_planning_image.jpg",
-		},
-		{
-			id: 7,
-			title: "Pre-Construction Preparation",
-			description: {
-				p1: "Clear and prepare the workspace.",
-				p2: "Set up temporary utilities or structures as needed.",
-				p3: "Protect existing structures and surfaces from damage.",
+			{
+				id: 7,
+				title: "Pre-Construction Preparation",
+				description: {
+					p1: "Clear and prepare the workspace.",
+					p2: "Set up temporary utilities or structures as needed.",
+					p3: "Protect existing structures and surfaces from damage.",
+				},
+				imagePath: "",
 			},
-			imagePath: "path/to/preconstruction_preparation_image.jpg",
-		},
-		{
-			id: 8,
-			title: "Demolition",
-			description: {
-				p1: "Safely remove existing structures, fixtures, and finishes.",
-				p2: "Dispose of debris and waste in accordance with regulations.",
-				p3: "Ensure a clean and safe worksite during demolition.",
+			{
+				id: 8,
+				title: "Demolition",
+				description: {
+					p1: "Safely remove existing structures, fixtures, and finishes.",
+					p2: "Dispose of debris and waste in accordance with regulations.",
+					p3: "Ensure a clean and safe worksite during demolition.",
+				},
+				imagePath: "",
 			},
-			imagePath: "path/to/demolition_image.jpg",
-		},
-		{
-			id: 9,
-			title: "Structural Work",
-			description: {
-				p1: "Complete any necessary framing, foundation, or structural changes.",
-				p2: "Install or update plumbing, electrical, and HVAC systems.",
-				p3: "Ensure structural integrity and compliance with building codes.",
+			{
+				id: 9,
+				title: "Construction and Installation",
+				description: {
+					p1: "Execute construction work as per the design plan.",
+					p2: "Install new structures, systems, and finishes.",
+					p3: "Ensure quality and compliance with building codes.",
+				},
+				imagePath: "",
 			},
-			imagePath: "path/to/structural_work_image.jpg",
-		},
-		{
-			id: 10,
-			title: "Rough-In Work",
-			description: {
-				p1: "Rough-in plumbing, electrical, and HVAC systems.",
-				p2: "Conduct inspections to ensure compliance with codes and standards.",
-				p3: "Prepare the space for insulation and drywall installation.",
+			{
+				id: 10,
+				title: "Final Walkthrough and Handover",
+				description: {
+					p1: "Conduct a final walkthrough with the client.",
+					p2: "Identify any remaining tasks or touch-ups (punch list) and complete them.",
+					p3: "Finalize all work, clean the site, and hand over the remodeled space to the client.",
+				},
+				imagePath: "",
 			},
-			imagePath: "path/to/roughin_work_image.jpg",
-		},
-		{
-			id: 11,
-			title: "Insulation and Drywall",
-			description: {
-				p1: "Install insulation in walls, ceilings, and floors.",
-				p2: "Hang drywall and finish with tape and mud.",
-				p3: "Ensure proper sealing and soundproofing for comfort.",
-			},
-			imagePath: "path/to/insulation_drywall_image.jpg",
-		},
-		{
-			id: 12,
-			title: "Flooring and Tile Installation",
-			description: {
-				p1: "Lay flooring materials (e.g., hardwood, tile, carpet).",
-				p2: "Install wall tiles in areas like bathrooms and kitchens.",
-				p3: "Ensure a durable and aesthetically pleasing finish.",
-			},
-			imagePath: "path/to/flooring_tile_installation_image.jpg",
-		},
-		{
-			id: 13,
-			title: "Cabinetry and Millwork",
-			description: {
-				p1: "Install cabinets, countertops, and millwork (e.g., baseboards, crown molding).",
-				p2: "Ensure proper alignment and fit.",
-				p3: "Add finishing touches for a polished look.",
-			},
-			imagePath: "path/to/cabinetry_millwork_image.jpg",
-		},
-		{
-			id: 14,
-			title: "Painting and Finishing",
-			description: {
-				p1: "Apply primer and paint to walls, ceilings, and trim.",
-				p2: "Install final finishes like hardware, fixtures, and accessories.",
-				p3: "Ensure a high-quality finish with attention to detail.",
-			},
-			imagePath: "path/to/painting_finishing_image.jpg",
-		},
-		{
-			id: 15,
-			title: "Final Inspections",
-			description: {
-				p1: "Conduct final inspections to ensure all work meets quality standards.",
-				p2: "Address any punch list items or minor adjustments.",
-				p3: "Obtain client approval before finalizing the project.",
-			},
-			imagePath: "path/to/final_inspections_image.jpg",
-		},
-		{
-			id: 16,
-			title: "Cleaning and Debris Removal",
-			description: {
-				p1: "Perform a thorough cleaning of the remodeled area.",
-				p2: "Remove all remaining debris and construction materials.",
-				p3: "Ensure the space is ready for use.",
-			},
-			imagePath: "path/to/cleaning_debris_removal_image.jpg",
-		},
-		{
-			id: 17,
-			title: "Client Walkthrough",
-			description: {
-				p1: "Conduct a final walkthrough with the client.",
-				p2: "Review all completed work and ensure client satisfaction.",
-				p3: "Provide warranty information and maintenance tips.",
-			},
-			imagePath: "path/to/client_walkthrough_image.jpg",
-		},
-		{
-			id: 18,
-			title: "Project Completion and Handover",
-			description: {
-				p1: "Finalize any outstanding paperwork or payments.",
-				p2: "Hand over the remodeled space to the client.",
-				p3: "Follow up to ensure the client is satisfied with the finished project.",
-			},
-			imagePath: "path/to/project_completion_handover_image.jpg",
-		},
-	],
+		],
+		markdown1:
+			"## Premier Home Improvement Services in Renton, WA\n\nAt RENOVA, we are dedicated to providing top-quality home improvement services tailored to the unique needs of homeowners in Renton, WA. Our team of experienced professionals ensures that every project is completed to the highest standards, enhancing both the beauty and functionality of your home.\n\n### Our Services\n\n#### Kitchen Renovations\nOur kitchen renovations in Renton focus on creating modern, functional, and aesthetically pleasing spaces. We offer:\n\n- **Custom cabinetry**: Maximize storage and style with our bespoke designs.\n- **Quartz countertops**: Durable, elegant surfaces that resist stains and scratches.\n- **Advanced appliances**: Integrate the latest technology for convenience and efficiency.\n- **Kitchen island installation**: Adding both workspace and seating.\n- **Backsplash tile**: Enhancing the look and feel of your kitchen.\n\n#### Bathroom Remodeling\nTransform your bathroom into a luxurious retreat with our expert remodeling services. We provide:\n\n- **Walk-in showers**: Spacious and elegant, offering a seamless look.\n- **Heated floors**: Adding warmth and comfort.\n- **High-end fixtures**: Enhancing sophistication and durability.\n- **Bathtub replacement**: Offering both style and function.\n\n#### Basement and Attic Finishing\nUnlock the full potential of your home with our basement and attic finishing services. These areas can be transformed into functional and inviting spaces, adding value and versatility to your home. Services include:\n\n- **Basement waterproofing**: Preventing moisture and mold.\n- **Attic insulation**: Ensuring energy efficiency.\n- **Entertainment centers**: Creating spaces for family fun.\n- **Basement bar installation**: Adding a touch of luxury and entertainment.\n\n#### Exterior Enhancements\nEnhance your home's curb appeal with our exterior renovation services. We offer:\n\n- **Contemporary siding options**: Including vinyl, cedar, and composite materials.\n- **Energy-efficient windows**: Improving insulation and reducing energy costs.\n- **Custom decks**: Creating outdoor spaces for relaxation and entertainment.\n- **Landscape lighting**: Highlighting your home's features beautifully.\n- **Roof replacement**: Ensuring durability and protection.\n\n##### Quality Craftsmanship\nAt RENOVA, we prioritize quality craftsmanship and attention to detail in every project. Our team ensures every aspect of your renovation is executed to the highest standards, resulting in a beautiful and functional home.",
+	},
 	markdown1:
 		"## Renova: Redefining Home Renovations\n\nEmbark on a journey of transformation with Renova. From revitalizing kitchens to rejuvenating bathrooms, our expertise in remodeling knows no bounds. We're here to make your dream home a reality.\n\n## Tailored Solutions for Your Unique Space\n\nAt Renova, we believe your home should reflect your personality. That's why we offer customized solutions to suit every corner of your space, ensuring both style and functionality.\n\n## Partner with Renova for Excellence\n\nChoosing Renova means choosing excellence. Our dedicated team is committed to delivering top-notch results that exceed your expectations. Let's elevate your living experience together!",
 	markdown2:
