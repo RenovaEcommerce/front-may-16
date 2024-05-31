@@ -39,9 +39,8 @@ export default function Home(): JSX.Element {
 
 			<Slider id="hero" />
 			<CatalogBanner />
-			<TagEmbedWidget />
+			
 			<ImageTextSection {...mainPageContent.imageTextSection} {...mainPageContent} />
-			<TagEmbedWidget />
 			<OurServices />
 			<MainAbout {...mainPageContent.aboutSection} />
 			<HowWeWork {...mainPageContent} />
