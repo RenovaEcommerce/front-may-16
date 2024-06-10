@@ -24,6 +24,8 @@ const config: Config = {
 			},
 			colors: {
 				"main-yellow": "#FBD331",
+				"main-yellow-light": "#fac905",
+				"main-yellow-dark": "#917506",
 				"main-dark": "#2C2C2C",
 				"main-gray": "#C8C8C8",
 			},

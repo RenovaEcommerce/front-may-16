@@ -3,6 +3,7 @@ import "./globals.css";
 import { Header } from "@/components/Header/Header";
 import { Footer } from "@/components/Footer/Footer";
 import NextBreadcrumb from "@/components/Breadcrumbs/Breadcrumbs";
+import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
 	title: "Create Next App",
@@ -27,7 +28,7 @@ export default function RootLayout({
 						capitalizeLinks
 					/>
 				</div>
-
+				<Toaster position="top-center" />
 				{children}
 				<Footer />
 			</body>
